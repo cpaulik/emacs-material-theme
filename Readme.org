@@ -1,6 +1,6 @@
 * Material Theme for Emacs
 
-Emacs colortheme based on the colors proposed by the [[http://www.google.com/design/spec/style/color.html#color-color-palette][Google Material Design]]
+Emacs Theme based on the colors proposed by the [[http://www.google.com/design/spec/style/color.html#color-color-palette][Google Material Design]]
 
 * Screenshot
 
