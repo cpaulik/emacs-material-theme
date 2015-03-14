@@ -321,7 +321,7 @@
    `(helm-ff-file ((,class (:foreground ,aqua ))))
    `(helm-ff-directory ((,class (:background ,"#cfd8dc" :foreground ,"#000000"))))
 
-   `(helm-source-header ((,class (:background ,green :height 1.3 :bold t ))))
+   `(helm-source-header ((,class (:background ,far-background :foreground ,foreground :height 1.3 :bold t ))))
 
    ;; mark-multiple
    `(mm/master-face ((,class (:inherit region :foreground nil :background nil))))
