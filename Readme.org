@@ -2,6 +2,10 @@
 
 Emacs Theme based on the colors proposed by the [[http://www.google.com/design/spec/style/color.html#color-color-palette][Google Material Design]]
 
-* Screenshot
+* Screenshots
 
+** Overview
 [[./material-theme.png]]
+
+** Org mode
+[[file:org-mode-demo.png][org mode]]

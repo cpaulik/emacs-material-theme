@@ -91,6 +91,10 @@
    `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
+   ;; Evil
+   `(evil-search-highlight-persist-highlight-face ((,class (:foreground ,foreground
+                                                            :background ,"#ef6c00"))))
+
    ;; Flymake
    `(flymake-warnline ((,class (:underline (:style wave :color ,orange) :background ,background))))
    `(flymake-errline ((,class (:underline (:style wave :color ,red) :background ,background))))
@@ -317,11 +321,23 @@
 
    ;; Helm
    `(helm-header ((,class (:foreground ,foreground :background ,background))))
-   `(helm-selection ((,class (:foreground ,red :background ,current-line))))
-   `(helm-ff-file ((,class (:foreground ,aqua ))))
-   `(helm-ff-directory ((,class (:background ,"#cfd8dc" :foreground ,"#000000"))))
+   `(helm-selection ((,class (:background ,current-line))))
+   `(helm-ff-file ((,class (:foreground ,foreground ))))
+   `(helm-ff-directory ((,class (:foreground ,aqua ))))
+   `(helm-ff-executable ((,class (:foreground ,green ))))
+   `(helm-buffer-directory ((,class (:foreground ,aqua))))
+   `(helm-buffer-file ((,class (:foreground ,foreground))))
+   `(helm-grep-file ((,class (:foreground ,aqua :underline t))))
+   `(helm-buffer-process ((,class (:foreground ,red))))
+   `(helm-buffer-not-saved ((,class (:foreground ,orange))))
+   `(helm-candidate-number ((,class (:foreground ,foreground :background ,"#ef6c00"))))
+   `(helm-source-header ((,class (:background ,"#455A64" :foreground ,"#eceff1" :height 1.3 :bold t ))))
 
-   `(helm-source-header ((,class (:background ,far-background :foreground ,foreground :height 1.3 :bold t ))))
+   ;; guide-key
+   `(guide-key/key-face ((,class (:foreground ,foreground ))))
+   `(guide-key/highlight-command-face ((,class (:foreground ,yellow ))))
+   `(guide-key/prefix-command-face ((,class (:foreground ,aqua ))))
+
 
    ;; mark-multiple
    `(mm/master-face ((,class (:inherit region :foreground nil :background nil))))
@@ -336,11 +352,11 @@
    `(org-code ((,class (:foreground ,yellow))))
    `(org-column ((,class (:background ,current-line))))
    `(org-column-title ((,class (:inherit org-column :weight bold :underline t))))
-   `(org-date ((,class (:foreground ,blue :underline t))))
+   `(org-date ((,class (:foreground ,"#80cbc4" :underline t))))
    `(org-document-info ((,class (:foreground ,aqua))))
    `(org-document-info-keyword ((,class (:foreground ,green))))
    `(org-document-title ((,class (:weight bold :foreground ,orange :height 1.44))))
-   `(org-done ((,class (:foreground ,green :bold t))))
+   `(org-done ((,class (:foreground ,green :bold t :background,"#1b5e20"))))
    `(org-ellipsis ((,class (:foreground ,comment))))
    `(org-footnote ((,class (:foreground ,aqua))))
    `(org-formula ((,class (:foreground ,red))))
@@ -349,13 +365,13 @@
    `(org-scheduled ((,class (:foreground ,green))))
    `(org-scheduled-previously ((,class (:foreground ,orange))))
    `(org-scheduled-today ((,class (:foreground ,green))))
-   `(org-special-keyword ((,class (:foreground ,orange))))
-   `(org-table ((,class (:foreground ,"#eeeeee"))))
-   `(org-todo ((,class (:foreground ,red :bold t))))
+   `(org-special-keyword ((,class (:foreground ,comment))))
+   `(org-table ((,class (:foreground ,"#e3f2fd" :background ,far-background))))
+   `(org-todo ((,class (:foreground ,"#ffab91" :bold t :background ,"#dd2c00"))))
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-warning ((,class (:weight bold :foreground ,red))))
-   `(org-block-begin-line ((,class (:background ,far-background))))
-   `(org-block-end-line ((,class (:background ,far-background))))
+   `(org-block-begin-line ((,class (:foreground ,"#b3e5fc" :underline ,"#e1f5fe"))))
+   `(org-block-end-line ((,class (:foreground ,"#b3e5fc" :overline ,"#e1f5fe"))))
 
    `(markdown-url-face ((,class (:inherit link))))
    `(markdown-link-face ((,class (:foreground ,blue :underline t))))
@@ -441,13 +457,24 @@
    ;; Powerline
    `(powerline-active1 ((t (:foreground ,foreground :background ,selection))))
    `(powerline-active2 ((t (:foreground ,foreground :background ,current-line))))
+   `(powerline-inactive1 ((t (:foreground ,foreground :background ,comment))))
+   `(powerline-inactive2 ((t (:foreground ,foreground :background ,comment))))
 
    ;; Outline
-   `(outline-1 ((,class (:inherit nil :foreground ,"SkyBlue1" :height 1.4))))
-   `(outline-2 ((,class (:inherit nil :foreground ,yellow :height 1.3))))
-   `(outline-3 ((,class (:inherit nil :foreground ,"#4dd0e1" :height 1.2))))
-   `(outline-4 ((,class (:inherit nil :foreground ,"#aed581" :height 1.1))))
-   `(outline-5 ((,class (:inherit nil :foreground ,orange))))
+   `(outline-1 ((,class (:inherit nil
+                         :overline ,"#b0bec5"
+                         :foreground ,"#eceff1"
+                         :background ,"#455A64"
+                         :weight bold
+                         :height 1.4))))
+   `(outline-2 ((,class (:inherit nil
+                                  :foreground ,"#e1f5fe"
+                                  :background ,"#21575b"
+                                  :overline ,"#e1f5fe"
+                         :height 1.3))))
+   `(outline-3 ((,class (:inherit nil :foreground ,"#a5d6a7" :height 1.2))))
+   `(outline-4 ((,class (:inherit nil :foreground ,"#ffcc80" :height 1.0))))
+   `(outline-5 ((,class (:inherit nil :foreground ,"#b3e5fc"))))
    `(outline-6 ((,class (:inherit nil :foreground ,"CadetBlue1"))))
    `(outline-7 ((,class (:inherit nil :foreground ,"aquamarine1"))))
    `(outline-8 ((,class (:inherit nil :foreground ,purple))))
