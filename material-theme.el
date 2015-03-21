@@ -354,6 +354,8 @@
    `(org-todo ((,class (:foreground ,red :bold t))))
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-warning ((,class (:weight bold :foreground ,red))))
+   `(org-block-begin-line ((,class (:background ,far-background))))
+   `(org-block-end-line ((,class (:background ,far-background))))
 
    `(markdown-url-face ((,class (:inherit link))))
    `(markdown-link-face ((,class (:foreground ,blue :underline t))))
