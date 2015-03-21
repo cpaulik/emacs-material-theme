@@ -441,10 +441,10 @@
    `(powerline-active2 ((t (:foreground ,foreground :background ,current-line))))
 
    ;; Outline
-   `(outline-1 ((,class (:inherit nil :foreground ,"SkyBlue1"))))
-   `(outline-2 ((,class (:inherit nil :foreground ,yellow))))
-   `(outline-3 ((,class (:inherit nil :foreground ,"#4dd0e1"))))
-   `(outline-4 ((,class (:inherit nil :foreground ,"#aed581"))))
+   `(outline-1 ((,class (:inherit nil :foreground ,"SkyBlue1" :height 1.4))))
+   `(outline-2 ((,class (:inherit nil :foreground ,yellow :height 1.3))))
+   `(outline-3 ((,class (:inherit nil :foreground ,"#4dd0e1" :height 1.2))))
+   `(outline-4 ((,class (:inherit nil :foreground ,"#aed581" :height 1.1))))
    `(outline-5 ((,class (:inherit nil :foreground ,orange))))
    `(outline-6 ((,class (:inherit nil :foreground ,"CadetBlue1"))))
    `(outline-7 ((,class (:inherit nil :foreground ,"aquamarine1"))))
@@ -633,4 +633,4 @@
 ;; hl-sexp-mode: nil
 ;; End:
 
-;;; material-theme.el ends here
+;;; spacegray-theme.el ends here
