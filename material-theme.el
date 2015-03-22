@@ -321,7 +321,7 @@
 
    ;; Helm
    `(helm-header ((,class (:foreground ,foreground :background ,background))))
-   `(helm-selection ((,class (:background ,current-line))))
+   `(helm-selection ((,class (:background ,current-line :foreground ,yellow))))
    `(helm-ff-file ((,class (:foreground ,foreground ))))
    `(helm-ff-directory ((,class (:foreground ,aqua ))))
    `(helm-ff-executable ((,class (:foreground ,green ))))
@@ -353,9 +353,9 @@
    `(org-column ((,class (:background ,current-line))))
    `(org-column-title ((,class (:inherit org-column :weight bold :underline t))))
    `(org-date ((,class (:foreground ,"#80cbc4" :underline t))))
-   `(org-document-info ((,class (:foreground ,aqua))))
-   `(org-document-info-keyword ((,class (:foreground ,green))))
-   `(org-document-title ((,class (:weight bold :foreground ,orange :height 1.44))))
+   `(org-document-info ((,class (:foreground ,aqua :height 1.35))))
+   `(org-document-info-keyword ((,class (:foreground ,green :height 1.35))))
+   `(org-document-title ((,class (:weight bold :foreground ,orange :height 1.35))))
    `(org-done ((,class (:foreground ,green :bold t :background,"#1b5e20"))))
    `(org-ellipsis ((,class (:foreground ,comment))))
    `(org-footnote ((,class (:foreground ,aqua))))
@@ -372,6 +372,25 @@
    `(org-warning ((,class (:weight bold :foreground ,red))))
    `(org-block-begin-line ((,class (:foreground ,"#b3e5fc" :underline ,"#e1f5fe"))))
    `(org-block-end-line ((,class (:foreground ,"#b3e5fc" :overline ,"#e1f5fe"))))
+
+   `(org-level-1 ((,class (:inherit nil
+                         :overline ,"#b0bec5"
+                         :foreground ,"#eceff1"
+                         :background ,"#455A64"
+                         :weight bold
+                         :height 1.3))))
+   `(org-level-2 ((,class (:inherit nil
+                                  :foreground ,"#e1f5fe"
+                                  :background ,"#21575b"
+                                  :overline ,"#e1f5fe"
+                         :height 1.2))))
+   `(org-level-3 ((,class (:inherit nil :foreground ,"#a5d6a7" :height 1.1))))
+   `(org-level-4 ((,class (:inherit nil :foreground ,"#ffcc80" :height 1.0))))
+   `(org-level-5 ((,class (:inherit nil :foreground ,"#b3e5fc"))))
+   `(org-level-6 ((,class (:inherit nil :foreground ,"CadetBlue1"))))
+   `(org-level-7 ((,class (:inherit nil :foreground ,"aquamarine1"))))
+   `(org-level-8 ((,class (:inherit nil :foreground ,purple))))
+   `(org-level-9 ((,class (:inherit nil :foreground ,"LightSteelBlue1"))))
 
    `(markdown-url-face ((,class (:inherit link))))
    `(markdown-link-face ((,class (:foreground ,blue :underline t))))
@@ -454,6 +473,23 @@
    `(jabber-activity-face ((,class (:foreground ,purple))))
    `(jabber-activity-personal-face ((,class (:foreground ,aqua))))
 
+   ;; Company autocomplete
+   ;; `(company-echo ((,class ())))
+   ;; `(company-echo-common ((,class ())))
+   ;; `(company-preview ((,class ())))
+   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#FFFFD7")))) ; same background as highlight-line
+   ;; `(company-preview-search ((,class ())))
+   `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
+   `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
+   ;; `(company-template-field ((,class ())))
+   `(company-tooltip ((,class (:weight bold :foreground, far-background :background ,"#78909c"))))
+   `(company-tooltip-annotation ((,class (:weight normal :foreground ,comment :background ,"#78909c"))))
+   `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
+   `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
+   ;; `(company-tooltip-mouse ((,class ())))
+   ;; `(company-tooltip-search ((,class ())))
+   `(company-tooltip-selection ((,class (:weight bold :foreground ,foreground :background ,current-line))))
+   
    ;; Powerline
    `(powerline-active1 ((t (:foreground ,foreground :background ,selection))))
    `(powerline-active2 ((t (:foreground ,foreground :background ,"#78909c"))))
@@ -475,24 +511,6 @@
    `(outline-8 ((,class (:inherit nil :foreground ,purple))))
    `(outline-9 ((,class (:inherit nil :foreground ,"LightSteelBlue1"))))
 
-   `(org-level-1 ((,class (:inherit nil
-                         :overline ,"#b0bec5"
-                         :foreground ,"#eceff1"
-                         :background ,"#455A64"
-                         :weight bold
-                         :height 1.4))))
-   `(org-level-2 ((,class (:inherit nil
-                                  :foreground ,"#e1f5fe"
-                                  :background ,"#21575b"
-                                  :overline ,"#e1f5fe"
-                         :height 1.3))))
-   `(org-level-3 ((,class (:inherit nil :foreground ,"#a5d6a7" :height 1.2))))
-   `(org-level-4 ((,class (:inherit nil :foreground ,"#ffcc80" :height 1.0))))
-   `(org-level-5 ((,class (:inherit nil :foreground ,"#b3e5fc"))))
-   `(org-level-6 ((,class (:inherit nil :foreground ,"CadetBlue1"))))
-   `(org-level-7 ((,class (:inherit nil :foreground ,"aquamarine1"))))
-   `(org-level-8 ((,class (:inherit nil :foreground ,purple))))
-   `(org-level-9 ((,class (:inherit nil :foreground ,"LightSteelBlue1"))))
 
    ;; Ledger-mode
    `(ledger-font-comment-face ((,class (:inherit font-lock-comment-face))))
