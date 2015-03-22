@@ -545,8 +545,8 @@
    `(gnus-button ((,class (:inherit link :foreground nil))))
    `(gnus-signature ((,class (:inherit font-lock-comment-face))))
 
-   `(gnus-summary-normal-unread ((,class (:foreground ,blue :weight normal))))
-   `(gnus-summary-normal-read ((,class (:foreground ,foreground :weight normal))))
+   `(gnus-summary-normal-unread ((,class (:foreground ,foreground :weight bold))))
+   `(gnus-summary-normal-read ((,class (:foreground ,comment :weight normal))))
    `(gnus-summary-normal-ancient ((,class (:foreground ,aqua :weight normal))))
    `(gnus-summary-normal-ticked ((,class (:foreground ,orange :weight normal))))
    `(gnus-summary-low-unread ((,class (:foreground ,comment :weight normal))))
