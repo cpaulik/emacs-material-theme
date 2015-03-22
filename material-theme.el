@@ -462,23 +462,37 @@
 
    ;; Outline
    `(outline-1 ((,class (:inherit nil
-                         :overline ,"#b0bec5"
-                         :foreground ,"#eceff1"
-                         :background ,"#455A64"
-                         :weight bold
-                         :height 1.4))))
+                :foreground ,"#cfd8dc" 
+                ))))
    `(outline-2 ((,class (:inherit nil
-                                  :foreground ,"#e1f5fe"
-                                  :background ,"#21575b"
-                                  :overline ,"#e1f5fe"
-                         :height 1.3))))
-   `(outline-3 ((,class (:inherit nil :foreground ,"#a5d6a7" :height 1.2))))
-   `(outline-4 ((,class (:inherit nil :foreground ,"#ffcc80" :height 1.0))))
+                         :foreground ,"#b0bec5"
+                ))))
+   `(outline-3 ((,class (:inherit nil :foreground ,"#a5d6a7" ))))
+   `(outline-4 ((,class (:inherit nil :foreground ,"#ffcc80" ))))
    `(outline-5 ((,class (:inherit nil :foreground ,"#b3e5fc"))))
    `(outline-6 ((,class (:inherit nil :foreground ,"CadetBlue1"))))
    `(outline-7 ((,class (:inherit nil :foreground ,"aquamarine1"))))
    `(outline-8 ((,class (:inherit nil :foreground ,purple))))
    `(outline-9 ((,class (:inherit nil :foreground ,"LightSteelBlue1"))))
+
+   `(org-level-1 ((,class (:inherit nil
+                         :overline ,"#b0bec5"
+                         :foreground ,"#eceff1"
+                         :background ,"#455A64"
+                         :weight bold
+                         :height 1.4))))
+   `(org-level-2 ((,class (:inherit nil
+                                  :foreground ,"#e1f5fe"
+                                  :background ,"#21575b"
+                                  :overline ,"#e1f5fe"
+                         :height 1.3))))
+   `(org-level-3 ((,class (:inherit nil :foreground ,"#a5d6a7" :height 1.2))))
+   `(org-level-4 ((,class (:inherit nil :foreground ,"#ffcc80" :height 1.0))))
+   `(org-level-5 ((,class (:inherit nil :foreground ,"#b3e5fc"))))
+   `(org-level-6 ((,class (:inherit nil :foreground ,"CadetBlue1"))))
+   `(org-level-7 ((,class (:inherit nil :foreground ,"aquamarine1"))))
+   `(org-level-8 ((,class (:inherit nil :foreground ,purple))))
+   `(org-level-9 ((,class (:inherit nil :foreground ,"LightSteelBlue1"))))
 
    ;; Ledger-mode
    `(ledger-font-comment-face ((,class (:inherit font-lock-comment-face))))
