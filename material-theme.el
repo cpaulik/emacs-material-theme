@@ -95,6 +95,9 @@
    `(evil-search-highlight-persist-highlight-face ((,class (:foreground ,foreground
                                                             :background ,"#ef6c00"))))
 
+   ;; iedit
+   `(iedit-occurrence ((,class (:foreground ,foreground :background ,orange))))
+
    ;; Flymake
    `(flymake-warnline ((,class (:underline (:style wave :color ,orange) :background ,background))))
    `(flymake-errline ((,class (:underline (:style wave :color ,red) :background ,background))))
