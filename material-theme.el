@@ -138,6 +138,16 @@
    `(rainbow-delimiters-depth-9-face ((,class (:foreground ,green))))
    `(rainbow-delimiters-unmatched-face ((,class (:foreground ,red))))
 
+   ;; ace-window
+   `(aw-leading-char-face ((,class (:foreground ,
+                                    foreground
+                                    :background ,
+                                    "#ef6c00"
+                                    :height ,
+                                    1.7
+                                    :weight
+                                    bold))))
+
    ;; MMM-mode
    `(mmm-code-submode-face ((,class (:background ,current-line))))
    `(mmm-comment-submode-face ((,class (:inherit font-lock-comment-face))))
