@@ -13,3 +13,6 @@ Emacs Theme based on the colors proposed by the [[http://www.google.com/design/s
 
 ** Org mode
 [[./org-mode-demo.png]]
+
+** Ace-window
+[[./ace-window.png]]
