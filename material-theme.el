@@ -317,7 +317,7 @@
    `(git-gutter-fr:deleted ((,class (:foreground ,red :weight bold))))
 
    `(link ((,class (:foreground nil :underline t))))
-   `(widget-button ((,class (:underline t))))
+   `(widget-button ((,class (:underline t :weight bold))))
    `(widget-field ((,class (:background ,current-line :box (:line-width 1 :color ,foreground)))))
 
    ;; Compilation (most faces politely inherit from 'success, 'error, 'warning etc.)
