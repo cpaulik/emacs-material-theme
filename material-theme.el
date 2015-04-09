@@ -398,7 +398,7 @@
                          :height 1.3))))
    `(org-level-2 ((,class (:inherit nil
                                   :foreground ,"#e1f5fe"
-                                  :background ,"#21575b"
+                                  :background ,"#35575b"
                                   :overline ,"#e1f5fe"
                          :height 1.2))))
    `(org-level-3 ((,class (:inherit nil :foreground ,"#a5d6a7" :height 1.1))))
