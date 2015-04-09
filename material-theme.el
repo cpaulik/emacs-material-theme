@@ -399,7 +399,7 @@
    `(org-level-2 ((,class (:inherit nil
                                   :foreground ,"#e1f5fe"
                                   :background ,"#35575b"
-                                  :overline ,"#e1f5fe"
+                                  :overline ,"#65757e"
                          :height 1.2))))
    `(org-level-3 ((,class (:inherit nil :foreground ,"#a5d6a7" :height 1.1))))
    `(org-level-4 ((,class (:inherit nil :foreground ,"#ffcc80" :height 1.0))))
