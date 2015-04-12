@@ -148,6 +148,12 @@
                                     :weight
                                     bold))))
 
+   ;; ace-jump-faces
+   `(ace-jump-face-foreground ((,class (:foreground ,foreground
+                                        :weight bold))))
+
+   `(ace-jump-face-background ((,class (:foreground ,"#78909c"
+                                        :weight normal))))
    ;; MMM-mode
    `(mmm-code-submode-face ((,class (:background ,current-line))))
    `(mmm-comment-submode-face ((,class (:inherit font-lock-comment-face))))
