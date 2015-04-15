@@ -416,6 +416,17 @@
    `(org-level-8 ((,class (:inherit nil :foreground ,purple))))
    `(org-level-9 ((,class (:inherit nil :foreground ,"LightSteelBlue1"))))
 
+   `(markdown-header-face-1 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.3 ))))
+   `(markdown-header-face-2 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.2 ))))
+   `(markdown-header-face-3 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.1 ))))
+   `(markdown-header-face-4 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.1 ))))
+   `(markdown-header-face-5 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.1 ))))
+   `(markdown-header-face-6 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.1 ))))
+   `(markdown-header-face-7 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.1 ))))
+   `(markdown-header-face-8 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.1 ))))
+   `(markdown-header-face-9 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.1 ))))
+   `(markdown-header-delimiter-face ((,class (:inherit font-lock-function-name-face :weight bold
+                                              :height 1.2))))
    `(markdown-url-face ((,class (:inherit link))))
    `(markdown-link-face ((,class (:foreground ,blue :underline t))))
 
