@@ -225,7 +225,7 @@
    `(show-paren-mismatch-face ((,class (:background "red1" :foreground "white"))))
 
    ;; Smartparens paren matching
-   `(sp-show-pair-match-face ((,class (:foreground nil :background nil :inherit show-paren-match))))
+   `(sp-show-pair-match-face ((,class (:foreground "black" :background ,aqua :inherit show-paren-match))))
    `(sp-show-pair-mismatch-face ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
 
    ;; Parenthesis matching (mic-paren)
