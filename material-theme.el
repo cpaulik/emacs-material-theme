@@ -43,9 +43,11 @@
 (let* ((class '((class color) (min-colors 89)))
        (256color (eq (display-color-cells (selected-frame)) 256))
 
-       (background "#263238") ;; sidebar-container
-       (current-line "#37474f") ;; tree-row
-       (far-background "#1c1f26") ;; panel-control
+       (background (if window-system "#263238" "#262626")) ;; sidebar-container
+       (current-line (if window-system  "#37474f" "#3a3a3a")) ;; tree-row
+       (far-background (if window-system  "#1c1f26" "#121212")) ;; panel-control
+       (inactive-gray (if window-system "#78909c" "#8a8a8a"))
+       (header-color (if window-system "#455A64" "#5f5f5f"))
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
        (selection "#555555") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
@@ -86,6 +88,24 @@
    `(success ((,class (:foreground "SeaGreen2"))))
    `(error ((,class (:foreground ,red))))
    `(warning ((,class (:foreground ,orange))))
+
+   ;; ace-window faces
+   `(aw-leading-char-face ((,class (:foreground ,
+                                    foreground
+                                    :background ,
+                                    "#ef6c00"
+                                    :height ,
+                                    1.7
+                                    :weight
+                                    bold))))
+
+   ;; ace-jump-faces
+   `(ace-jump-face-foreground ((,class (:foreground ,foreground
+                                        :background ,"#ef6c00"
+                                        :weight bold))))
+
+   `(ace-jump-face-background ((,class (:foreground ,inactive-gray
+                                        :weight normal))))
 
    ;; Flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
@@ -138,23 +158,6 @@
    `(rainbow-delimiters-depth-9-face ((,class (:foreground ,green))))
    `(rainbow-delimiters-unmatched-face ((,class (:foreground ,red))))
 
-   ;; ace-window
-   `(aw-leading-char-face ((,class (:foreground ,
-                                    foreground
-                                    :background ,
-                                    "#ef6c00"
-                                    :height ,
-                                    1.7
-                                    :weight
-                                    bold))))
-
-   ;; ace-jump-faces
-   `(ace-jump-face-foreground ((,class (:foreground ,foreground
-                                        :background ,"#ef6c00"
-                                        :weight bold))))
-
-   `(ace-jump-face-background ((,class (:foreground ,"#78909c"
-                                        :weight normal))))
    ;; MMM-mode
    `(mmm-code-submode-face ((,class (:background ,current-line))))
    `(mmm-comment-submode-face ((,class (:inherit font-lock-comment-face))))
@@ -221,7 +224,7 @@
    `(whitespace-hspace ((,class (:background nil :foreground ,selection))))
 
    ;; Parenthesis matching (built-in)
-   `(show-paren-match-face ((,class (:background "dodgerblue1" :foreground "white"))))
+   `(show-paren-match-face ((,class (:background aqua :foreground "black"))))
    `(show-paren-mismatch-face ((,class (:background "red1" :foreground "white"))))
 
    ;; Smartparens paren matching
@@ -355,7 +358,7 @@
    `(helm-buffer-process ((,class (:foreground ,red))))
    `(helm-buffer-not-saved ((,class (:foreground ,orange))))
    `(helm-candidate-number ((,class (:foreground ,foreground :background ,"#ef6c00"))))
-   `(helm-source-header ((,class (:background ,"#455A64" :foreground ,"#eceff1" :height 1.3 :bold t ))))
+   `(helm-source-header ((,class (:background ,header-color :foreground ,"#eceff1" :height 1.3 :bold t ))))
 
    ;; guide-key
    `(guide-key/key-face ((,class (:foreground ,foreground ))))
@@ -400,7 +403,7 @@
    `(org-level-1 ((,class (:inherit nil
                          :overline ,"#b0bec5"
                          :foreground ,"#eceff1"
-                         :background ,"#455A64"
+                         :background ,header-color
                          :weight bold
                          :height 1.3))))
    `(org-level-2 ((,class (:inherit nil
@@ -517,8 +520,8 @@
    `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
    `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
    ;; `(company-template-field ((,class ())))
-   `(company-tooltip ((,class (:weight bold :foreground, far-background :background ,"#78909c"))))
-   `(company-tooltip-annotation ((,class (:weight normal :foreground ,comment :background ,"#78909c"))))
+   `(company-tooltip ((,class (:weight bold :foreground, far-background :background ,inactive-gray))))
+   `(company-tooltip-annotation ((,class (:weight normal :foreground ,comment :background ,inactive-gray))))
    `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
    ;; `(company-tooltip-mouse ((,class ())))
@@ -527,7 +530,7 @@
    
    ;; Powerline
    `(powerline-active1 ((t (:foreground ,foreground :background ,selection))))
-   `(powerline-active2 ((t (:foreground ,foreground :background ,"#78909c"))))
+   `(powerline-active2 ((t (:foreground ,foreground :background ,inactive-gray))))
    `(powerline-inactive1 ((t (:foreground ,comment :background ,selection))))
    `(powerline-inactive2 ((t (:foreground ,comment :background ,selection))))
 
