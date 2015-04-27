@@ -223,7 +223,7 @@
    `(whitespace-hspace ((,class (:background nil :foreground ,selection))))
 
    ;; Parenthesis matching (built-in)
-   `(show-paren-match-face ((,class (:background aqua :foreground "black"))))
+   `(show-paren-match-face ((,class (:background ,aqua :foreground "black"))))
    `(show-paren-mismatch-face ((,class (:background "red1" :foreground "white"))))
 
    ;; Smartparens paren matching
