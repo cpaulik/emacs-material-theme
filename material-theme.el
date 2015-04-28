@@ -205,7 +205,7 @@
    `(mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
    `(mode-line-highlight ((,class (:foreground ,purple :box nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
-   `(region ((,class (:background ,selection :foreground ,background))))
+   `(region ((,class (:background ,selection))))
    `(secondary-selection ((,class (:background ,secondary-selection))))
 
    `(header-line ((,class (:inherit mode-line :foreground ,purple :background nil))))
