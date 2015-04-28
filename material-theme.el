@@ -111,16 +111,9 @@
    `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
-   ;; Evil
-   `(evil-search-highlight-persist-highlight-face ((,class (:foreground ,foreground
-                                                            :background ,"#ef6c00"))))
-
    ;; highlight indentation
    `(highlight-indentation-face ((,class (:background, current-line))))
    `(highlight-indentation-current-column-face ((,class (:background, far-background))))
-
-   ;; iedit
-   `(iedit-occurrence ((,class (:foreground ,foreground :background ,orange))))
 
    ;; Flymake
    `(flymake-warnline ((,class (:underline (:style wave :color ,orange) :background ,background))))
@@ -164,10 +157,21 @@
    `(mmm-output-submode-face ((,class (:background ,current-line))))
 
    ;; Search
-   `(match ((,class (:foreground ,selection :background ,current-line :inverse-video nil))))
-   `(isearch ((,class (:foreground ,selection :background ,current-line))))
-   `(isearch-lazy-highlight-face ((,class (:foreground ,selection :background nil :inverse-video nil))))
+   `(match ((,class (:foreground ,background :background ,green :inverse-video nil))))
+   `(isearch ((,class (:foreground ,foreground :background ,green))))
+   `(isearch-lazy-highlight-face ((,class (:foreground ,background :background ,green :inverse-video nil))))
+   `(lazy-highlight-face ((,class (:foreground ,background :background ,green :inverse-video nil))))
    `(isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
+
+   ;; Evil
+   `(evil-search-highlight-persist-highlight-face ((,class (:foreground ,background
+                                                            :background ,green))))
+   ;; iedit
+   `(iedit-occurrence ((,class (:foreground ,background :background ,green))))
+
+   ;; ahs
+   `(ahs-face ((,class (:foreground ,background :background ,green))))
+   `(ahs-plugin-whole-buffer-face ((,class (:foreground ,foreground :background ,green))))
 
    ;; Anzu
    `(anzu-mode-line ((,class (:foreground ,orange))))
