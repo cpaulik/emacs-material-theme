@@ -142,16 +142,16 @@
    `(clojure-java-call ((,class (:foreground ,purple))))
 
    ;; Rainbow-delimiters
-   `(rainbow-delimiters-depth-1-face ((,class (:foreground ,foreground))))
-   `(rainbow-delimiters-depth-2-face ((,class (:foreground ,aqua))))
-   `(rainbow-delimiters-depth-3-face ((,class (:foreground ,yellow))))
-   `(rainbow-delimiters-depth-4-face ((,class (:foreground ,green))))
-   `(rainbow-delimiters-depth-5-face ((,class (:foreground ,blue))))
-   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,foreground))))
-   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,aqua))))
-   `(rainbow-delimiters-depth-8-face ((,class (:foreground ,yellow))))
-   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,green))))
-   `(rainbow-delimiters-unmatched-face ((,class (:foreground ,red))))
+   `(rainbow-delimiters-depth-1-face ((,class (:foreground ,"#e91e63"))))
+   `(rainbow-delimiters-depth-2-face ((,class (:foreground ,"#2196F3"))))
+   `(rainbow-delimiters-depth-3-face ((,class (:foreground ,"#EF6C00"))))
+   `(rainbow-delimiters-depth-4-face ((,class (:foreground ,"#B388FF"))))
+   `(rainbow-delimiters-depth-5-face ((,class (:foreground ,"#76ff03"))))
+   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,"#26A69A"))))
+   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,"#FFCDD2"))))
+   `(rainbow-delimiters-depth-8-face ((,class (:foreground ,"#795548"))))
+   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,"#DCE775"))))
+   `(rainbow-delimiters-unmatched-face ((,class (:foreground ,foreground :background ,"#EF6C00"))))
 
    ;; MMM-mode
    `(mmm-code-submode-face ((,class (:background ,current-line))))
