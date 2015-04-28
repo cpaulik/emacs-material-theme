@@ -373,9 +373,9 @@
    `(org-agenda-date ((,class (:foreground ,blue :underline nil))))
    `(org-agenda-done ((,class (:foreground ,green))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground ,comment))))
-   `(org-block ((,class (:foreground ,orange))))
-   `(org-block-background ((,class (:background "#1F2232"))))
-   `(org-code ((,class (:foreground ,yellow))))
+   `(org-block ((,class (:foreground ,green :background ,far-background))))
+   `(org-block-background ((,t (:background ,far-background))))
+   `(org-code ((,class (:foreground ,green :background ,far-background))))
    `(org-column ((,class (:background ,current-line))))
    `(org-column-title ((,class (:inherit org-column :weight bold :underline t))))
    `(org-date ((,class (:foreground ,"#80cbc4" :underline t))))
@@ -396,8 +396,8 @@
    `(org-todo ((,class (:foreground ,"#ffab91" :bold t :background ,"#dd2c00"))))
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-warning ((,class (:weight bold :foreground ,red))))
-   `(org-block-begin-line ((,class (:foreground ,"#b3e5fc" :underline ,"#e1f5fe"))))
-   `(org-block-end-line ((,class (:foreground ,"#b3e5fc" :overline ,"#e1f5fe"))))
+   `(org-block-begin-line ((,class (:foreground ,"#b3e5fc" :background "#1e2930" :underline ,"#e1f5fe"))))
+   `(org-block-end-line ((,class (:foreground ,"#b3e5fc" :background "#1e2930" :overline ,"#e1f5fe"))))
 
    `(org-level-1 ((,class (:inherit nil
                          :overline ,"#b0bec5"
