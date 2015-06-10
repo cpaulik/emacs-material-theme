@@ -387,7 +387,7 @@
    `(org-date ((,class (:foreground ,"#80cbc4" :underline t))))
    `(org-document-info ((,class (:foreground ,aqua :height 1.35))))
    `(org-document-info-keyword ((,class (:foreground ,green :height 1.35))))
-   `(org-document-title ((,class (:weight bold :foreground ,orange :height 1.35))))
+   `(org-document-title ((,class (:weight bold :foreground ,foreground :height 1.35))))
    `(org-done ((,class (:foreground ,green :bold t :background,"#1b5e20"))))
    `(org-ellipsis ((,class (:foreground ,comment))))
    `(org-footnote ((,class (:foreground ,aqua))))
