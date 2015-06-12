@@ -53,7 +53,7 @@
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
        (foreground "#212121")
        (comment "#607d8b") ;; table-row
-       (red "#f36c60") ;; tab-control-hover-tab-close-button
+       (red "#FF5722") ;; tab-control-hover-tab-close-button
        (orange "#ff9800") ;; darker tab-control-dirty-tab-close-butto
        (yellow "#fbc02d") ;; tab-control-dirty-tab-close-button
        (green "#558b2f") ;; complement tab-control-dirty-tab-close-button
@@ -68,7 +68,7 @@
    `(bold-italic ((,class (:slant italic :weight bold))))
    `(underline ((,class (:underline t))))
    `(italic ((,class (:slant italic))))
-   `(font-lock-builtin-face ((,class (:foreground "#FF5722"))))
+   `(font-lock-builtin-face ((,class (:foreground ,red))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,comment))))
    `(font-lock-comment-face ((,class (:foreground ,comment))))
    `(font-lock-constant-face ((,class (:foreground ,green))))
@@ -380,31 +380,31 @@
    `(org-agenda-date ((,class (:foreground ,blue :underline nil))))
    `(org-agenda-done ((,class (:foreground ,green))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground ,comment))))
-   `(org-block ((,class (:foreground ,green :background ,far-background))))
-   `(org-block-background ((,t (:background ,far-background))))
-   `(org-code ((,class (:foreground ,green :background ,far-background))))
+   `(org-block ((,class (:foreground ,foreground :background ,"#EFEBE9"))))
+   `(org-block-background ((,t (:background ,"#EFEBE9"))))
+   `(org-code ((,class (:foreground ,foreground :background ,"#EFEBE9"))))
    `(org-column ((,class (:background ,current-line))))
    `(org-column-title ((,class (:inherit org-column :weight bold :underline t))))
    `(org-date ((,class (:foreground ,"#80cbc4" :underline t))))
    `(org-document-info ((,class (:foreground ,aqua :height 1.35))))
    `(org-document-info-keyword ((,class (:foreground ,green :height 1.35))))
    `(org-document-title ((,class (:weight bold :foreground ,foreground :height 1.35))))
-   `(org-done ((,class (:foreground ,green :bold t :background,"#1b5e20"))))
+   `(org-done ((,class (:background ,"#c8e6c9" :bold t :foreground,"#2e7d32"))))
    `(org-ellipsis ((,class (:foreground ,comment))))
    `(org-footnote ((,class (:foreground ,aqua))))
    `(org-formula ((,class (:foreground ,red))))
    `(org-hide ((,class (:foreground ,background :background ,background))))
-   `(org-link ((,class (:foreground ,blue :underline t))))
+   `(org-link ((,class (:foreground ,red :underline t))))
    `(org-scheduled ((,class (:foreground ,green))))
    `(org-scheduled-previously ((,class (:foreground ,orange))))
    `(org-scheduled-today ((,class (:foreground ,green))))
    `(org-special-keyword ((,class (:foreground ,comment))))
-   `(org-table ((,class (:foreground ,"#1976d2" :background ,far-background))))
-   `(org-todo ((,class (:foreground ,"#ffab91" :bold t :background ,"#dd2c00"))))
+   `(org-table ((,class (:foreground ,"#1565c0" :background ,"#e0f7fa"))))
+   `(org-todo ((,class (:background ,"#ffcdd2" :bold t :foreground ,"#c62828"))))
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-warning ((,class (:weight bold :foreground ,red))))
-   `(org-block-begin-line ((,class (:foreground ,"#b3e5fc" :background "#1e2930" :underline ,"#e1f5fe"))))
-   `(org-block-end-line ((,class (:foreground ,"#b3e5fc" :background "#1e2930" :overline ,"#e1f5fe"))))
+   `(org-block-begin-line ((,class (:foreground ,"#4e342e" :background "#d7ccc8" :underline ,"#a1887f"))))
+   `(org-block-end-line ((,class (:foreground ,"#4e342e" :background "#d7ccc8" :overline ,"#a1887f"))))
 
    `(org-level-1 ((,class (:inherit nil
                          :overline ,"#b0bec5"
@@ -414,7 +414,7 @@
                          :height 1.3))))
    `(org-level-2 ((,class (:inherit nil
                                   :foreground ,"#424242"
-                                  :background ,far-background
+                                  :background ,"#C8E6C9"
                                   :overline ,"#65757e"
                          :height 1.2))))
    `(org-level-3 ((,class (:inherit nil :foreground ,"#2e7d32" :height 1.1))))
