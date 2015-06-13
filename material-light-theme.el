@@ -47,7 +47,7 @@
        (current-line (if window-system  "#cfd8dc" "#3a3a3a")) ;; tree-row
        (far-background (if window-system  "#e0f7fa" "#121212")) ;; panel-control
        (inactive-gray (if window-system "#cfd8dc" "#8a8a8a"))
-       (header-color (if window-system "##C8E6C9" "#5f5f5f"))
+       (header-color (if window-system "#C8E6C9" "#5f5f5f"))
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
        (selection "#90A4AE") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
