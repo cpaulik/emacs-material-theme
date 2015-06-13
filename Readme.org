@@ -4,15 +4,16 @@
 
 Emacs Theme based on the colors proposed by the [[http://www.google.com/design/spec/style/color.html#color-color-palette][Google Material Design]].
 
-There are two variants
+** Light and Dark Theme 
+There are two variants of the theme:
 
-- material
+- material ::
   To use it put the following in your init.el 
   #+begin_src emacs-lisp
   (load-theme 'material t)
   #+end_src
 
-- material-light
+- material-light ::
   To use it put the following in your init.el 
   #+begin_src emacs-lisp
   (load-theme 'material-light t)
