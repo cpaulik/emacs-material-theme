@@ -43,11 +43,11 @@
 (let* ((class '((class color) (min-colors 89)))
        (256color (eq (display-color-cells (selected-frame)) 256))
 
-       (background (if window-system "#FAFAFA" "#262626")) ;; sidebar-container
-       (current-line (if window-system  "#cfd8dc" "#3a3a3a")) ;; tree-row
-       (far-background (if window-system  "#e0f7fa" "#121212")) ;; panel-control
-       (inactive-gray (if window-system "#cfd8dc" "#8a8a8a"))
-       (header-color (if window-system "#C8E6C9" "#5f5f5f"))
+       (background (if window-system "#FAFAFA" "#FAFAFA")) ;; sidebar-container
+       (current-line (if window-system  "#cfd8dc" "#cfd8dc")) ;; tree-row
+       (far-background (if window-system  "#e0f7fa" "#e0f7fa")) ;; panel-control
+       (inactive-gray (if window-system "#cfd8dc" "#cfd8dc"))
+       (header-color (if window-system "#C8E6C9" "#C8E6C9"))
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
        (selection "#90A4AE") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
@@ -404,7 +404,7 @@
    `(org-warning ((,class (:weight bold :foreground ,red))))
    `(org-block-begin-line ((,class (:foreground ,"#4e342e" :background "#efebe9" :underline ,"#a1887f"))))
    `(org-block-end-line ((,class (:foreground ,"#4e342e" :background "#efebe9" :overline ,"#a1887f"))))
-   `(org-kbd ((,class (:background ,inactive-gray :foreground ,foreground :before-text " "
+   `(org-kbd ((,class (:background ,inactive-gray :foreground ,foreground
                                    :box (:line-width 1 :color nil :style pressed-button)))))
 
    `(org-level-1 ((,class (:inherit nil
