@@ -2,7 +2,22 @@
 [[https://github.com/cpaulik/emacs-material-theme/blob/master/LICENSE.txt][file:https://img.shields.io/badge/license-MIT-green.svg]]
 [[http://melpa.org/#/material-theme][file:http://melpa.org/packages/material-theme-badge.svg]]
 
-Emacs Theme based on the colors proposed by the [[http://www.google.com/design/spec/style/color.html#color-color-palette][Google Material Design]]
+Emacs Theme based on the colors proposed by the [[http://www.google.com/design/spec/style/color.html#color-color-palette][Google Material Design]].
+
+** Light and Dark Theme 
+There are two variants of the theme:
+
+- material ::
+  To use it put the following in your init.el 
+  #+begin_src emacs-lisp
+  (load-theme 'material t)
+  #+end_src
+
+- material-light ::
+  To use it put the following in your init.el 
+  #+begin_src emacs-lisp
+  (load-theme 'material-light t)
+  #+end_src
 
 
 
