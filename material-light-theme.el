@@ -195,7 +195,7 @@
    ;; Emacs interface
    `(cursor ((,class (:background ,orange))))
    `(fringe ((,class (:background ,current-line))))
-   `(linum ((,class (:background ,background :foreground ,subtle))))
+   `(linum ((,class (:background ,current-line :foreground ,foreground))))
    `(linum-highlight-face ((,class (:background ,current-line :foreground ,foreground))))
    `(border ((,class (:background ,current-line))))
    `(border-glyph ((,class (nil))))
