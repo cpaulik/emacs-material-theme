@@ -229,11 +229,11 @@
    `(whitespace-hspace ((,class (:background nil :foreground ,selection))))
 
    ;; Parenthesis matching (built-in)
-   `(show-paren-match-face ((,class (:background ,aqua :foreground ,background))))
+   `(show-paren-match-face ((,class (:background ,blue :foreground ,background))))
    `(show-paren-mismatch-face ((,class (:background "red1" :foreground "white"))))
 
    ;; Smartparens paren matching
-   `(sp-show-pair-match-face ((,class (:foreground ,background :background ,aqua :inherit show-paren-match))))
+   `(sp-show-pair-match-face ((,class (:foreground ,background :background ,blue :inherit show-paren-match))))
    `(sp-show-pair-mismatch-face ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
 
    ;; Parenthesis matching (mic-paren)
@@ -416,7 +416,7 @@
    `(org-level-2 ((,class (:inherit nil
                                   :foreground ,"#424242"
                                   :background ,"#C8E6C9"
-                                  :overline ,"#65757e"
+                                  :overline ,"#E8F5E9"
                          :height 1.2))))
    `(org-level-3 ((,class (:inherit nil :foreground ,"#2e7d32" :height 1.1))))
    `(org-level-4 ((,class (:inherit nil :foreground ,"#ef6c00" :height 1.0))))
