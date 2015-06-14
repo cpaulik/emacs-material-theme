@@ -448,7 +448,7 @@
    `(py-builtins-face ((,class (:foreground ,"#ff7043" :weight normal))))
 
    ;; ein (emacs-ipython-notebook) specific colors
-   `(ein:cell-input-area ((,class (:background ,"#1e2930"))))
+   `(ein:cell-input-area ((,class (:background ,"#EFEFEF"))))
    `(ein:cell-input-prompt ((,class (:inherit org-block-begin-line))))
    `(ein:cell-output-prompt ((,class (:inherit org-block-end-line))))
 
