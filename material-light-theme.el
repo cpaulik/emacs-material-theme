@@ -44,7 +44,7 @@
        (256color (eq (display-color-cells (selected-frame)) 256))
 
        (background (if window-system "#FAFAFA" "#FAFAFA")) ;; sidebar-container
-       (current-line (if window-system  "#cfd8dc" "#cfd8dc")) ;; tree-row
+       (current-line (if window-system  "#ECEFF1" "#dadada")) ;; tree-row
        (far-background (if window-system  "#e0f7fa" "#e0f7fa")) ;; panel-control
        (inactive-gray (if window-system "#cfd8dc" "#cfd8dc"))
        (header-color (if window-system "#C8E6C9" "#C8E6C9"))
@@ -410,7 +410,7 @@
    `(org-level-1 ((,class (:inherit nil
                          :overline ,"#b0bec5"
                          :foreground ,"#424242"
-                         :background ,current-line
+                         :background ,inactive-gray
                          :weight bold
                          :height 1.3))))
    `(org-level-2 ((,class (:inherit nil
@@ -541,7 +541,7 @@
    `(company-tooltip-selection ((,class (:weight bold :foreground ,foreground :background ,far-background))))
 
    ;; Powerline
-   `(powerline-active1 ((t (:foreground ,foreground :background ,current-line))))
+   `(powerline-active1 ((t (:foreground ,foreground :background ,inactive-gray))))
    `(powerline-active2 ((t (:foreground ,foreground :background ,inactive-gray))))
    `(powerline-inactive1 ((t (:foreground ,comment :background ,selection))))
    `(powerline-inactive2 ((t (:foreground ,comment :background ,selection))))
