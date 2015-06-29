@@ -322,7 +322,7 @@
    `(magit-blame-heading               ((t (:background "#222222"
                                             :foreground ,background))))
    `(magit-diff-file-heading           ((t (:weight bold))))
-   `(magit-diff-file-heading-highlight ((t (:background ,background  :weight bold))))
+   `(magit-diff-file-heading-highlight ((t (:background ,current-line  :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,background
                                             :foreground ,orange :weight bold))))
    `(magit-diff-hunk-heading           ((t (:background ,header-color))))
