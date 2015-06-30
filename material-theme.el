@@ -303,23 +303,48 @@
    `(diredp-symlink ((,class (:foreground ,purple))))
    `(diredp-write-priv ((,class (:foreground ,yellow :background nil))))
 
-   ;; Magit (a patch is pending in magit to make these standard upstream)
+   ;; Magit
    `(magit-branch ((,class (:foreground ,green))))
-   `(magit-diff-add ((,class (:inherit diff-added))))
-   `(magit-diff-del ((,class (:inherit diff-removed))))
+   `(magit-diff-added ((,class (:inherit diff-added))))
+   `(magit-diff-added-highlight ((,class (:inherit magit-diff-added
+                                          :background ,far-background))))
+   `(magit-diff-removed ((,class (:inherit diff-removed))))
+   `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed
+                                            :background ,far-background))))
    `(magit-header ((,class (:inherit nil :weight bold))))
    `(magit-item-highlight ((,class (:inherit highlight :background nil))))
    `(magit-log-author ((,class (:foreground ,aqua))))
    `(magit-log-graph ((,class (:foreground ,comment))))
-   `(magit-log-head-label-bisect-bad ((,class (:foreground ,red))))
-   `(magit-log-head-label-bisect-good ((,class (:foreground ,green))))
-   `(magit-log-head-label-default ((,class (:foreground ,yellow :box nil :weight bold))))
-   `(magit-log-head-label-local ((,class (:foreground ,purple :box nil :weight bold))))
-   `(magit-log-head-label-remote ((,class (:foreground ,purple :box nil :weight bold))))
-   `(magit-log-head-label-tags ((,class (:foreground ,aqua :box nil :weight bold))))
-   `(magit-log-sha1 ((,class (:foreground ,yellow))))
+   `(magit-log-date ((,class (:foreground ,yellow))))
    `(magit-section-title ((,class (:foreground ,blue :weight bold))))
-
+   `(magit-section-highlight           ((t (:background ,current-line))))
+   `(magit-section-heading             ((t (:foreground ,yellow :weight bold))))
+   `(magit-blame-heading               ((t (:background "#222222"
+                                            :foreground ,background))))
+   `(magit-diff-file-heading           ((t (:weight bold))))
+   `(magit-diff-file-heading-highlight ((t (:background ,current-line  :weight bold))))
+   `(magit-diff-file-heading-selection ((t (:background ,background
+                                            :foreground ,orange :weight bold))))
+   `(magit-diff-hunk-heading           ((t (:background ,header-color))))
+   `(magit-diff-hunk-heading-highlight ((t (:background ,header-color))))
+   `(magit-diff-hunk-heading-selection ((t (:background ,background
+                                            :foreground ,orange))))
+   `(magit-diff-lines-heading          ((t (:background ,orange
+                                            :foreground ,background))))
+   `(magit-diff-context-highlight      ((t (:background ,far-background
+                                            :foreground "grey70"))))
+   `(magit-diffstat-added   ((t (:foreground ,green))))
+   `(magit-diffstat-removed ((t (:foreground ,red))))
+   `(magit-process-ok    ((t (:foreground ,green  :weight bold))))
+   `(magit-process-ng    ((t (:foreground ,red    :weight bold))))
+   `(magit-branch-local  ((t (:foreground ,blue   :weight bold))))
+   `(magit-branch-remote ((t (:foreground ,green  :weight bold))))
+   `(magit-tag           ((t (:foreground ,orange :weight bold))))
+   `(magit-hash          ((t (:foreground ,comment))))
+   `(magit-sequence-stop ((t (:foreground ,green))))
+   `(magit-sequence-part ((t (:foreground ,yellow))))
+   `(magit-sequence-head ((t (:foreground ,blue))))
+   `(magit-sequence-drop ((t (:foreground ,red))))
    ;; git-gutter
    `(git-gutter:modified ((,class (:foreground ,purple :weight bold))))
    `(git-gutter:added ((,class (:foreground ,green :weight bold))))
