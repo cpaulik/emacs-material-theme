@@ -319,8 +319,6 @@
    `(magit-section-title ((,class (:foreground ,blue :weight bold))))
    `(magit-section-highlight           ((t (:background ,current-line))))
    `(magit-section-heading             ((t (:foreground ,yellow :weight bold))))
-   `(magit-blame-heading               ((t (:background "#222222"
-                                            :foreground ,background))))
    `(magit-diff-file-heading           ((t (:weight bold))))
    `(magit-diff-file-heading-highlight ((t (:background ,current-line  :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,background
@@ -331,6 +329,12 @@
                                             :foreground ,orange))))
    `(magit-diff-lines-heading          ((t (:background ,orange
                                             :foreground ,background))))
+   `(magit-blame-heading          ((t (:background ,far-background
+                                                   :foreground ,aqua))))
+   `(magit-blame-date             ((t (:background ,far-background
+                                                   :foreground ,blue))))
+   `(magit-blame-summary          ((t (:background ,far-background
+                                                   :foreground ,green))))
    `(magit-diff-context-highlight      ((t (:background ,far-background
                                             :foreground "grey70"))))
    `(magit-diff-context                ((t (:foreground "grey70"))))
