@@ -532,6 +532,20 @@
    `(message-header-newsgroups ((,class (:foreground ,aqua :background nil :slant normal))))
    `(message-separator ((,class (:foreground ,purple))))
 
+   ;; cfw emacs calendar
+   `(cfw:face-title ((,class (:background ,background :foreground ,"#eceff1" :height 1.3 :weight bold))))
+   `(cfw:face-today ((,class (:background ,far-background :foreground ,foreground))))
+   `(cfw:face-day-title ((,class (:background ,current-line :foreground ,foreground))))
+   `(cfw:face-today-title ((,class (:background ,secondary-selection :foreground ,foreground))))
+   `(cfw:face-header ((,class (:background ,current-line :foreground ,foreground))))
+   `(cfw:face-sunday ((,class (:background ,current-line :foreground ,aqua :weight bold))))
+   `(cfw:face-saturday ((,class (:background ,current-line :foreground ,aqua :weight bold))))
+   `(cfw:face-select ((,class (:background ,selection :foreground ,foreground))))
+   `(cfw:face-toolbar ((,class (:background ,aqua :foreground ,background :weight bold))))
+   `(cfw:face-toolbar-button-off ((,class (:background ,aqua :foreground ,background :weight bold))))
+   `(cfw:face-toolbar-button-on ((,class (:background ,aqua :foreground ,secondary-selection :weight bold))))
+   `(cfw:face-holiday ((,class (:background ,current-line :foreground ,green :weight bold))))
+
    ;; Jabber
    `(jabber-chat-prompt-local ((,class (:foreground ,yellow))))
    `(jabber-chat-prompt-foreign ((,class (:foreground ,orange))))
