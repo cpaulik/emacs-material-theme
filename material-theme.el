@@ -399,6 +399,12 @@
    `(guide-key/highlight-command-face ((,class (:foreground ,yellow ))))
    `(guide-key/prefix-command-face ((,class (:foreground ,aqua ))))
 
+   ;; which-key
+   `(which-key-key-face ((,class (:foreground ,foreground  :weight bold))))
+   `(which-key-special-key-face ((,class (:foreground ,orange  :weight bold :height 1.1))))
+   `(which-key-command-description-face ((,class (:foreground ,foreground ))))
+   `(which-key-group-description-face ((,class (:foreground ,aqua ))))
+   `(which-key-separator-face ((,class (:foreground ,comment ))))
 
    ;; mark-multiple
    `(mm/master-face ((,class (:inherit region :foreground nil :background nil))))
