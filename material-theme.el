@@ -776,6 +776,10 @@
        (360 . ,green)))
    `(vc-annotate-very-old-color nil)
    `(vc-annotate-background nil)
+
+   ;; highlight-sexp-mode
+   `(hl-sexp-background-color ,far-background)
+
    `(ansi-color-names-vector (vector ,foreground ,red ,green ,yellow ,blue ,purple ,aqua ,background))
    '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
 
