@@ -382,6 +382,7 @@
 
    ;; Helm
    `(helm-header ((,class (:foreground ,foreground :background ,background))))
+   `(helm-match ((,class (:foreground ,"gold1"))))
    `(helm-selection ((,class (:background ,current-line :foreground ,yellow))))
    `(helm-ff-file ((,class (:foreground ,foreground ))))
    `(helm-ff-directory ((,class (:foreground ,aqua ))))
