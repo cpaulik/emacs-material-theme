@@ -444,24 +444,22 @@
    `(org-kbd ((,class (:background ,inactive-gray :foreground ,foreground
                                    :box (:line-width 1 :color nil :style pressed-button)))))
 
-   `(org-level-1 ((,class (:inherit nil
+   `(org-level-1 ((,class (:inherit outline-1
                          :overline ,"#b0bec5"
-                         :foreground ,"#424242"
                          :background ,inactive-gray
                          :weight bold
                          :height 1.3))))
-   `(org-level-2 ((,class (:inherit nil
-                                  :foreground ,"#424242"
+   `(org-level-2 ((,class (:inherit outline-2
                                   :background ,"#C8E6C9"
                                   :overline ,"#E8F5E9"
                          :height 1.2))))
-   `(org-level-3 ((,class (:inherit nil :foreground ,"#2e7d32" :height 1.1))))
-   `(org-level-4 ((,class (:inherit nil :foreground ,"#ef6c00" :height 1.0))))
-   `(org-level-5 ((,class (:inherit nil :foreground ,"#0277bd"))))
-   `(org-level-6 ((,class (:inherit nil :foreground ,"#0288d1"))))
-   `(org-level-7 ((,class (:inherit nil :foreground ,"#689f38"))))
-   `(org-level-8 ((,class (:inherit nil :foreground ,purple))))
-   `(org-level-9 ((,class (:inherit nil :foreground ,"LightSteelBlue1"))))
+   `(org-level-3 ((,class (:inherit outline-3  :height 1.1))))
+   `(org-level-4 ((,class (:inherit outline-4  :height 1.0))))
+   `(org-level-5 ((,class (:inherit outline-5 ))))
+   `(org-level-6 ((,class (:inherit outline-6 ))))
+   `(org-level-7 ((,class (:inherit outline-7 ))))
+   `(org-level-8 ((,class (:inherit outline-8 ))))
+   `(org-level-9 ((,class (:inherit outline-9 ))))
 
    `(markdown-header-face-1 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.3 ))))
    `(markdown-header-face-2 ((,class (:inherit font-lock-function-name-face :weight bold :height 1.2 ))))
@@ -598,17 +596,13 @@
    `(powerline-inactive2 ((t (:foreground ,comment :background ,selection))))
 
    ;; Outline
-   `(outline-1 ((,class (:inherit nil
-                :foreground ,"#cfd8dc"
-                ))))
-   `(outline-2 ((,class (:inherit nil
-                         :foreground ,"#b0bec5"
-                ))))
-   `(outline-3 ((,class (:inherit nil :foreground ,"#a5d6a7" ))))
-   `(outline-4 ((,class (:inherit nil :foreground ,"#ffcc80" ))))
-   `(outline-5 ((,class (:inherit nil :foreground ,"#b3e5fc"))))
-   `(outline-6 ((,class (:inherit nil :foreground ,"CadetBlue1"))))
-   `(outline-7 ((,class (:inherit nil :foreground ,"aquamarine1"))))
+   `(outline-1 ((,class (:inherit nil :foreground ,"#424242"))))
+   `(outline-2 ((,class (:inherit nil :foreground ,"#646464"))))
+   `(outline-3 ((,class (:inherit nil :foreground ,"#2e7d32"))))
+   `(outline-4 ((,class (:inherit nil :foreground ,"#ef6c00"))))
+   `(outline-5 ((,class (:inherit nil :foreground ,"#0277bd"))))
+   `(outline-6 ((,class (:inherit nil :foreground ,"#0288d1"))))
+   `(outline-7 ((,class (:inherit nil :foreground ,"#689f38"))))
    `(outline-8 ((,class (:inherit nil :foreground ,purple))))
    `(outline-9 ((,class (:inherit nil :foreground ,"LightSteelBlue1"))))
 
@@ -625,6 +619,26 @@
    `(ledger-font-xact-highlight-face ((,class (:inherit highlight))))
    `(ledger-occur-narrowed-face ((,class (:inherit font-lock-comment-face :invisible t))))
    `(ledger-occur-xact-face ((,class (:inherit highlight))))
+
+   ;; auctex
+   `(font-latex-bold-face                 ((t (:inherit bold :foreground ,foreground))))
+   `(font-latex-doctex-documentation-face ((t (:background unspecified))))
+   `(font-latex-doctex-preprocessor-face ((t (:inherit (font-latex-doctex-documentation-face
+                                                        font-lock-builtin-face font-lock-preprocessor-face)))))
+   `(font-latex-italic-face               ((t (:inherit italic :foreground ,foreground))))
+   `(font-latex-math-face                 ((t (:foreground ,blue))))
+   `(font-latex-sectioning-0-face         ((t (:inherit outline-1 :height 1.1))))
+   `(font-latex-sectioning-1-face         ((t (:inherit outline-2 :height 1.1))))
+   `(font-latex-sectioning-2-face         ((t (:inherit outline-3 :height 1.1))))
+   `(font-latex-sectioning-3-face         ((t (:inherit outline-4 :height 1.1))))
+   `(font-latex-sectioning-4-face         ((t (:inherit outline-5 :height 1.1))))
+   `(font-latex-sectioning-5-face         ((t (:inherit outline-6 :height 1.1))))
+   `(font-latex-sedate-face               ((t (:foreground ,green))))
+   `(font-latex-slide-title-face          ((t (:inherit font-lock-type-face :weight bold :height 1.2))))
+   `(font-latex-string-face               ((t (:inherit font-lock-string-face))))
+   `(font-latex-subscript-face            ((t (:height 0.8))))
+   `(font-latex-superscript-face          ((t (:height 0.8))))
+   `(font-latex-warning-face              ((t (:inherit font-lock-warning-face))))
 
    ;; mu4e
    `(mu4e-header-highlight-face ((,class (:underline nil :inherit region))))
