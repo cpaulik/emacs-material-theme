@@ -110,7 +110,11 @@
 
    ;; Flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
+   `(flycheck-info ((,class (:underline (:style wave :color ,blue)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
+   `(flycheck-fringe-error ((,class (:foreground ,red :background ,current-line))))
+   `(flycheck-fringe-info ((,class (:foreground ,blue :background ,current-line))))
+   `(flycheck-fringe-warning ((,class (:foreground ,yellow :background ,current-line))))
 
    ;; highlight indentation
    `(highlight-indentation-face ((,class (:background, current-line))))
