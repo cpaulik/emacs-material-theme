@@ -402,8 +402,8 @@
 
    ;; guide-key
    `(guide-key/key-face ((,class (:foreground ,foreground ))))
-   `(guide-key/highlight-command-face ((,class (:foreground ,yellow ))))
-   `(guide-key/prefix-command-face ((,class (:foreground ,aqua ))))
+   `(guide-key/highlight-command-face ((,class (:foreground ,orange ))))
+   `(guide-key/prefix-command-face ((,class (:foreground ,blue ))))
 
    ;; which-key
    `(which-key-key-face ((,class (:foreground ,foreground  :weight bold))))
