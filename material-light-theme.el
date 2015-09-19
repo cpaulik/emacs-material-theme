@@ -388,7 +388,7 @@
 
    ;; Helm
    `(helm-header ((,class (:foreground ,foreground :background ,background))))
-   `(helm-selection ((,class (:background ,current-line))))
+   `(helm-selection ((,class (:background ,current-line :foreground ,blue))))
    `(helm-ff-file ((,class (:foreground ,foreground ))))
    `(helm-ff-directory ((,class (:foreground ,blue ))))
    `(helm-ff-executable ((,class (:foreground ,green ))))
