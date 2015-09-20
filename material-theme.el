@@ -383,7 +383,7 @@
    ;; Helm
    `(helm-header ((,class (:foreground ,foreground :background ,background))))
    `(helm-match ((,class (:foreground ,"gold1"))))
-   `(helm-selection ((,class (:background ,current-line :foreground ,yellow))))
+   `(helm-selection ((,class (:background ,current-line))))
    `(helm-ff-file ((,class (:foreground ,foreground ))))
    `(helm-ff-directory ((,class (:foreground ,aqua ))))
    `(helm-ff-executable ((,class (:foreground ,green ))))
