@@ -110,7 +110,11 @@
 
    ;; Flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
+   `(flycheck-info ((,class (:underline (:style wave :color ,blue)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
+   `(flycheck-fringe-error ((,class (:foreground ,red :background ,current-line))))
+   `(flycheck-fringe-info ((,class (:foreground ,blue :background ,current-line))))
+   `(flycheck-fringe-warning ((,class (:foreground ,yellow :background ,current-line))))
 
    ;; highlight indentation
    `(highlight-indentation-face ((,class (:background, current-line))))
@@ -385,6 +389,7 @@
    ;; Helm
    `(helm-header ((,class (:foreground ,foreground :background ,background))))
    `(helm-selection ((,class (:background ,current-line))))
+   `(helm-match ((,class (:foreground ,blue ))))
    `(helm-ff-file ((,class (:foreground ,foreground ))))
    `(helm-ff-directory ((,class (:foreground ,blue ))))
    `(helm-ff-executable ((,class (:foreground ,green ))))
@@ -398,8 +403,8 @@
 
    ;; guide-key
    `(guide-key/key-face ((,class (:foreground ,foreground ))))
-   `(guide-key/highlight-command-face ((,class (:foreground ,yellow ))))
-   `(guide-key/prefix-command-face ((,class (:foreground ,aqua ))))
+   `(guide-key/highlight-command-face ((,class (:foreground ,orange ))))
+   `(guide-key/prefix-command-face ((,class (:foreground ,blue ))))
 
    ;; which-key
    `(which-key-key-face ((,class (:foreground ,foreground  :weight bold))))
@@ -553,11 +558,11 @@
    `(cfw:face-holiday ((,class (:background ,current-line :foreground ,green :weight bold))))
 
    ;; Jabber
-   `(jabber-chat-prompt-local ((,class (:foreground ,yellow))))
-   `(jabber-chat-prompt-foreign ((,class (:foreground ,orange))))
-   `(jabber-chat-prompt-system ((,class (:foreground ,yellow :weight bold))))
-   `(jabber-chat-text-local ((,class (:foreground ,yellow))))
-   `(jabber-chat-text-foreign ((,class (:foreground ,orange))))
+   `(jabber-chat-prompt-local ((,class (:foreground ,subtle))))
+   `(jabber-chat-prompt-foreign ((,class (:foreground ,blue))))
+   `(jabber-chat-prompt-system ((,class (:foreground ,orange :weight bold))))
+   `(jabber-chat-text-local ((,class (:foreground ,subtle))))
+   `(jabber-chat-text-foreign ((,class (:foreground ,foreground))))
    `(jabber-chat-text-error ((,class (:foreground ,red))))
 
    `(jabber-roster-user-online ((,class (:foreground ,green))))
@@ -641,11 +646,12 @@
    `(font-latex-warning-face              ((t (:inherit font-lock-warning-face))))
 
    ;; mu4e
-   `(mu4e-header-highlight-face ((,class (:underline nil :inherit region :background ,current-line))))
+   `(mu4e-header-face ((,class (:foreground ,subtle :inherit nil))))
+   `(mu4e-header-highlight-face ((,class (:background ,current-line :underline nil :inherit region))))
    `(mu4e-header-marks-face ((,class (:underline nil :foreground ,yellow))))
    `(mu4e-flagged-face ((,class (:foreground ,orange :inherit nil))))
-   `(mu4e-replied-face ((,class (:foreground ,blue :inherit nil))))
-   `(mu4e-unread-face ((,class (:foreground ,yellow :inherit nil))))
+   `(mu4e-replied-face ((,class (:foreground ,green :inherit nil))))
+   `(mu4e-unread-face ((,class (:foreground ,foreground :inherit nil))))
    `(mu4e-cited-1-face ((,class (:inherit outline-1 :slant normal))))
    `(mu4e-cited-2-face ((,class (:inherit outline-2 :slant normal))))
    `(mu4e-cited-3-face ((,class (:inherit outline-3 :slant normal))))
