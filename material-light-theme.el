@@ -558,11 +558,11 @@
    `(cfw:face-holiday ((,class (:background ,current-line :foreground ,green :weight bold))))
 
    ;; Jabber
-   `(jabber-chat-prompt-local ((,class (:foreground ,yellow))))
-   `(jabber-chat-prompt-foreign ((,class (:foreground ,orange))))
-   `(jabber-chat-prompt-system ((,class (:foreground ,yellow :weight bold))))
-   `(jabber-chat-text-local ((,class (:foreground ,yellow))))
-   `(jabber-chat-text-foreign ((,class (:foreground ,orange))))
+   `(jabber-chat-prompt-local ((,class (:foreground ,subtle))))
+   `(jabber-chat-prompt-foreign ((,class (:foreground ,blue))))
+   `(jabber-chat-prompt-system ((,class (:foreground ,orange :weight bold))))
+   `(jabber-chat-text-local ((,class (:foreground ,subtle))))
+   `(jabber-chat-text-foreign ((,class (:foreground ,foreground))))
    `(jabber-chat-text-error ((,class (:foreground ,red))))
 
    `(jabber-roster-user-online ((,class (:foreground ,green))))
