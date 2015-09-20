@@ -639,11 +639,12 @@
    `(font-latex-warning-face              ((t (:inherit font-lock-warning-face))))
 
    ;; mu4e
+   `(mu4e-header-face ((,class (:foreground ,subtle :inherit nil))))
    `(mu4e-header-highlight-face ((,class (:underline nil :inherit region :background ,current-line))))
    `(mu4e-header-marks-face ((,class (:underline nil :foreground ,yellow))))
    `(mu4e-flagged-face ((,class (:foreground ,orange :inherit nil))))
-   `(mu4e-replied-face ((,class (:foreground ,blue :inherit nil))))
-   `(mu4e-unread-face ((,class (:foreground ,yellow :inherit nil))))
+   `(mu4e-replied-face ((,class (:foreground ,green :inherit nil))))
+   `(mu4e-unread-face ((,class (:foreground ,foreground :inherit nil))))
    `(mu4e-cited-1-face ((,class (:inherit outline-1 :slant normal))))
    `(mu4e-cited-2-face ((,class (:inherit outline-2 :slant normal))))
    `(mu4e-cited-3-face ((,class (:inherit outline-3 :slant normal))))
