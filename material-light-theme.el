@@ -650,6 +650,7 @@
    `(mu4e-header-highlight-face ((,class (:background ,current-line :underline nil :inherit region))))
    `(mu4e-header-marks-face ((,class (:underline nil :foreground ,yellow))))
    `(mu4e-flagged-face ((,class (:foreground ,orange :inherit nil))))
+   `(mu4e-forwarded-face ((,class (:foreground ,aqua :inherit nil))))
    `(mu4e-replied-face ((,class (:foreground ,green :inherit nil))))
    `(mu4e-unread-face ((,class (:foreground ,foreground :inherit nil))))
    `(mu4e-cited-1-face ((,class (:inherit outline-1 :slant normal))))
