@@ -77,7 +77,7 @@
    `(font-lock-function-name-face ((,class (:foreground ,"#0097A7"))))
    `(font-lock-keyword-face ((,class (:foreground ,aqua))))
    `(font-lock-negation-char-face ((,class (:foreground ,blue))))
-   `(font-lock-preprocessor-face ((,class (:foreground "gold"))))
+   `(font-lock-preprocessor-face ((,class (:foreground ,"#0097A7"))))
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,yellow))))
    `(font-lock-regexp-grouping-construct ((,class (:foreground ,purple))))
    `(font-lock-string-face ((,class (:foreground "#689f38"))))
