@@ -53,9 +53,9 @@
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
        (foreground "#212121")
        (comment "#607d8b") ;; table-row
-       (red "#FF5722") ;; tab-control-hover-tab-close-button
-       (orange "#ff9800") ;; darker tab-control-dirty-tab-close-butto
-       (yellow "#fbc02d") ;; tab-control-dirty-tab-close-button
+       (red "#D54315") ;; tab-control-hover-tab-close-button
+       (orange "#FF5722") ;; darker tab-control-dirty-tab-close-butto
+       (yellow "#FFA000") ;; tab-control-dirty-tab-close-button
        (green "#558b2f") ;; complement tab-control-dirty-tab-close-button
        (aqua "#00796b") ;; lighter complement tab-control-dirty-tab-close-button
        (blue "#2196f3") ;; complement tab-control-dirty-tab-close-button
@@ -77,7 +77,7 @@
    `(font-lock-function-name-face ((,class (:foreground ,"#0097A7"))))
    `(font-lock-keyword-face ((,class (:foreground ,aqua))))
    `(font-lock-negation-char-face ((,class (:foreground ,blue))))
-   `(font-lock-preprocessor-face ((,class (:foreground "gold"))))
+   `(font-lock-preprocessor-face ((,class (:foreground ,yellow))))
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,yellow))))
    `(font-lock-regexp-grouping-construct ((,class (:foreground ,purple))))
    `(font-lock-string-face ((,class (:foreground "#689f38"))))
