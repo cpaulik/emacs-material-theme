@@ -820,4 +820,4 @@
 ;; hl-sexp-mode: nil
 ;; End:
 
-;;; spacegray-theme.el ends here
+;;; material-light-theme.el ends here
