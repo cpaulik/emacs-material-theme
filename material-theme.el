@@ -259,8 +259,12 @@
 
    `(csv-separator-face ((,class (:foreground ,orange))))
 
+   `(diff-hl-insert ((,class (:background ,green :foreground ,green))))
+   `(diff-hl-change ((,class (:background ,aqua :foreground ,aqua))))
+   `(diff-hl-delete ((,class (:background ,orange :foreground ,orange))))
+
    `(diff-added ((,class (:foreground ,green))))
-   `(diff-changed ((,class (:foreground ,purple))))
+   `(diff-changed ((,class (:foreground ,aqua))))
    `(diff-removed ((,class (:foreground ,orange))))
    `(diff-header ((,class (:foreground ,aqua :background nil))))
    `(diff-file-header ((,class (:foreground ,blue :background nil))))
