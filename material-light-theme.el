@@ -605,6 +605,9 @@
    `(powerline-inactive1 ((t (:foreground ,comment :background ,selection))))
    `(powerline-inactive2 ((t (:foreground ,comment :background ,selection))))
 
+   ;; spaceline
+   `(spaceline-python-venv ((t (:foreground ,aqua))))
+
    ;; Outline
    `(outline-1 ((,class (:inherit nil :foreground ,"#424242"))))
    `(outline-2 ((,class (:inherit nil :foreground ,"#646464"))))

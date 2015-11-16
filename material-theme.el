@@ -599,6 +599,9 @@
    `(powerline-inactive1 ((t (:foreground ,comment :background ,selection))))
    `(powerline-inactive2 ((t (:foreground ,comment :background ,selection))))
 
+   ;; Spaceline
+   `(spaceline-python-venv ((t (:foreground ,yellow))))
+
    ;; Outline
    `(outline-1 ((,class (:inherit nil :foreground ,"#eceff1"))))
    `(outline-2 ((,class (:inherit nil :foreground ,"#e1f5fe"))))
