@@ -613,8 +613,16 @@
    `(powerline-inactive1 ((t (:foreground ,comment :background ,selection))))
    `(powerline-inactive2 ((t (:foreground ,comment :background ,selection))))
 
-   ;; spaceline
+   ;; Spaceline
    `(spaceline-python-venv ((t (:foreground ,aqua))))
+   `(spaceline-evil-normal ((t (:foreground ,background :background ,yellow :inherit mode-line))))
+   `(spaceline-evil-insert ((t (:foreground ,background :background ,green :inherit mode-line))))
+   `(spaceline-evil-visual ((t (:foreground ,background :background ,selection :inherit mode-line))))
+
+   ;; Spacemacs
+   `(spacemacs-normal-face ((t (:inherit spaceline-evil-normal))))
+   `(spacemacs-insert-face ((t (:inherit spaceline-evil-insert))))
+   `(spacemacs-visual-face ((t (:inherit spaceline-evil-visual))))
 
    ;; Outline
    `(outline-1 ((,class (:inherit nil :foreground ,"#424242"))))

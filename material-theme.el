@@ -609,6 +609,14 @@
 
    ;; Spaceline
    `(spaceline-python-venv ((t (:foreground ,yellow))))
+   `(spaceline-evil-normal ((t (:foreground ,foreground :background ,orange :inherit mode-line))))
+   `(spaceline-evil-insert ((t (:foreground ,background :background ,green :inherit mode-line))))
+   `(spaceline-evil-visual ((t (:foreground ,foreground :background ,selection :inherit mode-line))))
+
+   ;; Spacemacs
+   `(spacemacs-normal-face ((t (:inherit spaceline-evil-normal))))
+   `(spacemacs-insert-face ((t (:inherit spaceline-evil-insert))))
+   `(spacemacs-visual-face ((t (:inherit spaceline-evil-visual))))
 
    ;; Outline
    `(outline-1 ((,class (:inherit nil :foreground ,"#eceff1"))))
