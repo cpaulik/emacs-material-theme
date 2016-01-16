@@ -454,19 +454,22 @@
    `(org-todo ((,class (:background ,"#ffcdd2" :bold t :foreground ,"#c62828"))))
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-warning ((,class (:weight bold :foreground ,red))))
-   `(org-block-begin-line ((,class (:foreground ,"#4e342e" :background "#efebe9" :underline ,"#a1887f"))))
-   `(org-block-end-line ((,class (:foreground ,"#4e342e" :background "#efebe9" :overline ,"#a1887f"))))
+   `(org-block-begin-line ((,class (:foreground ,"#4e342e" :background "#efebe9" 
+                                                :box (:style released-button)
+                                                ))))
+   `(org-block-end-line ((,class (:foreground ,"#4e342e" :background "#efebe9"
+                                              :box (:style released-button)))))
    `(org-kbd ((,class (:background ,inactive-gray :foreground ,foreground
                                    :box (:line-width 1 :color nil :style pressed-button)))))
 
    `(org-level-1 ((,class (:inherit outline-1
-                         :overline ,"#b0bec5"
                          :background ,inactive-gray
                          :weight bold
+                         :box (:style released-button)
                          :height 1.3))))
    `(org-level-2 ((,class (:inherit outline-2
                                   :background ,"#C8E6C9"
-                                  :overline ,"#E8F5E9"
+                                  :box (:style released-button)
                          :height 1.2))))
    `(org-level-3 ((,class (:inherit outline-3  :height 1.1))))
    `(org-level-4 ((,class (:inherit outline-4  :height 1.0))))
