@@ -592,7 +592,7 @@
    ;; `(company-preview-search ((,class ())))
    `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
    `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
-   ;; `(company-template-field ((,class ())))
+   `(company-template-field ((,class (:background ,inactive-gray))))
    `(company-tooltip ((,class (:weight bold :foreground, far-background :background ,inactive-gray))))
    `(company-tooltip-annotation ((,class (:weight normal :foreground ,comment :background ,inactive-gray))))
    `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
