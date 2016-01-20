@@ -790,7 +790,16 @@
    `(term-color-blue    ((,class (:foreground ,blue :background ,blue))))
    `(term-color-magenta ((,class (:foreground ,purple :background ,purple))))
    `(term-color-cyan    ((,class (:foreground ,aqua :background ,aqua))))
-   `(term-color-white   ((,class (:foreground ,background :background ,background)))))
+   `(term-color-white   ((,class (:foreground ,background :background ,background))))
+
+   ;; elfeed
+   `(elfeed-log-date-face ((,class (:foreground ,aqua))))
+   `(elfeed-log-error-level-face ((,class (:foreground ,red))))
+   `(elfeed-log-info-level-face ((,class (:foreground ,blue))))
+   `(elfeed-log-warn-level-face ((,class (:foreground ,orange))))
+   `(elfeed-search-date-face ((,class (:foreground ,purple))))
+   `(elfeed-search-feed-face ((,class (:foreground ,yellow))))
+   `(elfeed-search-tag-face ((,class (:foreground ,green)))))
 
   (custom-theme-set-variables
    'material
