@@ -454,7 +454,7 @@
    `(org-todo ((,class (:background ,"#ffcdd2" :bold t :foreground ,"#c62828"))))
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-warning ((,class (:weight bold :foreground ,red))))
-   `(org-block-begin-line ((,class (:foreground ,"#4e342e" :background "#efebe9" 
+   `(org-block-begin-line ((,class (:foreground ,"#4e342e" :background "#efebe9"
                                                 :box (:style released-button)
                                                 ))))
    `(org-block-end-line ((,class (:foreground ,"#4e342e" :background "#efebe9"
@@ -604,7 +604,7 @@
    `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
    ;; `(company-tooltip-mouse ((,class ())))
-   ;; `(company-tooltip-search ((,class ()))) 
+   ;; `(company-tooltip-search ((,class ())))
    `(company-tooltip-selection ((,class (:weight bold :foreground ,foreground :background ,far-background))))
 
    ;; Powerline
@@ -806,7 +806,18 @@
    `(elfeed-log-warn-level-face ((,class (:foreground ,orange))))
    `(elfeed-search-date-face ((,class (:foreground ,purple))))
    `(elfeed-search-feed-face ((,class (:foreground ,yellow))))
-   `(elfeed-search-tag-face ((,class (:foreground ,green)))))
+   `(elfeed-search-tag-face ((,class (:foreground ,green))))
+
+   ;; rpm-spec-mode
+   `(rpm-spec-dir-face ((,class (:foreground ,green))))
+   `(rpm-spec-doc-face ((,class (:foreground ,green))))
+   `(rpm-spec-ghost-face ((,class (:foreground ,red))))
+   `(rpm-spec-macro-face ((,class (:foreground ,yellow))))
+   `(rpm-spec-obsolete-tag-face ((,class (:foreground ,red))))
+   `(rpm-spec-package-face ((,class (:foreground ,red))))
+   `(rpm-spec-section-face ((,class (:foreground ,yellow))))
+   `(rpm-spec-tag-face ((,class (:foreground ,blue))))
+   `(rpm-spec-var-face ((,class (:foreground ,red)))))
 
   (custom-theme-set-variables
    'material-light

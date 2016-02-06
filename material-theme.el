@@ -600,7 +600,7 @@
    ;; `(company-tooltip-mouse ((,class ())))
    ;; `(company-tooltip-search ((,class ())))
    `(company-tooltip-selection ((,class (:weight bold :foreground ,foreground :background ,current-line))))
-   
+
    ;; Powerline
    `(powerline-active1 ((t (:foreground ,foreground :background ,selection))))
    `(powerline-active2 ((t (:foreground ,foreground :background ,inactive-gray))))
@@ -799,7 +799,18 @@
    `(elfeed-log-warn-level-face ((,class (:foreground ,orange))))
    `(elfeed-search-date-face ((,class (:foreground ,purple))))
    `(elfeed-search-feed-face ((,class (:foreground ,yellow))))
-   `(elfeed-search-tag-face ((,class (:foreground ,green)))))
+   `(elfeed-search-tag-face ((,class (:foreground ,green))))
+
+   ;; rpm-spec-mode
+   `(rpm-spec-dir-face ((,class (:foreground ,green))))
+   `(rpm-spec-doc-face ((,class (:foreground ,green))))
+   `(rpm-spec-ghost-face ((,class (:foreground ,red))))
+   `(rpm-spec-macro-face ((,class (:foreground ,yellow))))
+   `(rpm-spec-obsolete-tag-face ((,class (:foreground ,red))))
+   `(rpm-spec-package-face ((,class (:foreground ,red))))
+   `(rpm-spec-section-face ((,class (:foreground ,yellow))))
+   `(rpm-spec-tag-face ((,class (:foreground ,blue))))
+   `(rpm-spec-var-face ((,class (:foreground ,red)))))
 
   (custom-theme-set-variables
    'material
