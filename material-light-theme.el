@@ -593,8 +593,8 @@
    ;; Company autocomplete
    ;; `(company-echo ((,class ())))
    ;; `(company-echo-common ((,class ())))
-   ;; `(company-preview ((,class ())))
-   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#FFFFD7")))) ; same background as highlight-line
+   `(company-preview ((,class (:foreground ,comment :background ,inactive-gray))))
+   `(company-preview-common ((,class (:foreground ,comment :background ,inactive-gray)))) ; same background as highlight-line
    ;; `(company-preview-search ((,class ())))
    `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
    `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
