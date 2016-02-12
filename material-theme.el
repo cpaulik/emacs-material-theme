@@ -113,10 +113,15 @@
    `(ace-jump-face-background ((,class (:foreground ,inactive-gray
                                         :weight normal))))
 
-   ;; ace-jump-mode
-   `(avy-background-face ((t (:background ,"#ef6c00"))))
-   `(avy-lead-face-0 ((t (:foreground ,foreground :background ,"#ef6c00" :weight bold))))
-   `(avy-lead-face ((t (:foreground ,foreground :background ,"#ef6c00" :weight bold))))
+   ;; avy-jump-mode
+   `(avy-background-face ((,class (:foreground ,inactive-gray
+                                   :weight normal))))
+   `(avy-lead-face-0 ((,class (:foreground ,foreground
+                               :background ,"#ef6c00"
+                                        :weight bold))))
+   `(avy-lead-face ((,class (:foreground ,foreground
+                             :background ,"#ef6c00"
+                             :weight bold))))
         
    ;; Flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,red)))))

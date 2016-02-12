@@ -114,9 +114,14 @@
                                         :weight normal))))
 
    ;; ace-jump-mode
-   `(avy-background-face ((t (:background ,green))))
-   `(avy-lead-face-0 ((t (:foreground ,background :background ,green :weight bold))))
-   `(avy-lead-face ((t (:foreground ,background :background ,green :weight bold))))
+   `(avy-background-face ((,class (:foreground ,inactive-gray
+                                               :weight normal))))
+   `(avy-lead-face-0 ((,class (:foreground ,background
+                                        :background ,green
+                                        :weight bold))))
+   `(avy-lead-face ((,class (:foreground ,background
+                                        :background ,green
+                                        :weight bold))))
 
    ;; Flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
