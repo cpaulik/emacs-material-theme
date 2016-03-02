@@ -562,7 +562,7 @@
 
    ;; cfw emacs calendar
    `(cfw:face-title ((,class (:background ,background :foreground ,"#eceff1" :height 1.3 :weight bold))))
-   `(cfw:face-today ((,class (:background ,far-background :foreground ,foreground))))
+   `(cfw:face-today ((,class (:foreground ,foreground))))
    `(cfw:face-day-title ((,class (:background ,current-line :foreground ,foreground))))
    `(cfw:face-today-title ((,class (:background ,secondary-selection :foreground ,foreground))))
    `(cfw:face-header ((,class (:background ,current-line :foreground ,foreground))))
