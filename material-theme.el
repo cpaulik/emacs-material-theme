@@ -534,6 +534,12 @@
    `(coffee-mode-class-name ((,class (:foreground ,orange :weight bold))))
    `(coffee-mode-function-param ((,class (:foreground ,purple))))
 
+   ;; elixir-mode
+   `(elixir-negation-face ((,class (:foreground ,red))))
+   `(elixir-attribute-face ((,class (:foreground ,purple))))
+   `(elixir-atom-face ((,class (:foreground ,aqua))))
+   `(elixir-ignored-var-face ((,class (:foreground ,comment))))
+
    ;; nxml
    `(nxml-name-face ((,class (:foreground unspecified :inherit font-lock-constant-face))))
    `(nxml-attribute-local-name-face ((,class (:foreground unspecified :inherit font-lock-variable-name-face))))
