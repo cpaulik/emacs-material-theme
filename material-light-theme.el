@@ -49,12 +49,11 @@
        (256color (eq (display-color-cells (selected-frame)) 256))
        (truecolor (eq (display-color-cells (selected-frame)) 16777216))
 
-       (background (if (or window-system truecolor) "#263238" "#262626")) ;; sidebar-container
-       (current-line (if (or window-system truecolor)  "#37474f" "#3a3a3a")) ;; tree-row
-       (far-background (if (or window-system truecolor)  "#1c1f26" "#121212")) ;; panel-control
-       (inactive-gray (if (or window-system truecolor) "#78909c" "#8a8a8a"))
-       (header-color (if (or window-system truecolor) "#455A64" "#5f5f5f"))
-
+       (background (if (or window-system truecolor) "#FAFAFA" "#FAFAFA")) ;; sidebar-container
+       (current-line (if (or window-system truecolor)  "#ECEFF1" "#dadada")) ;; tree-row
+       (far-background (if (or window-system truecolor)  "#e0f7fa" "#e0f7fa")) ;; panel-control
+       (inactive-gray (if (or window-system truecolor) "#cfd8dc" "#cfd8dc"))
+       (header-color (if (or window-system truecolor) "#C8E6C9" "#C8E6C9"))
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
        (selection "#90A4AE") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
