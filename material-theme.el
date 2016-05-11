@@ -613,6 +613,7 @@
    `(company-template-field ((,class (:background ,inactive-gray))))
    `(company-tooltip ((,class (:weight bold :foreground, far-background :background ,inactive-gray))))
    `(company-tooltip-annotation ((,class (:weight normal :foreground ,comment :background ,inactive-gray))))
+   `(company-tooltip-annotation-selection ((,class (:weight normal :inherit company-tooltip-selection))))
    `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
    ;; `(company-tooltip-mouse ((,class ())))
