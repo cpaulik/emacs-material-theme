@@ -46,13 +46,14 @@
   "A UI Theme for Emacs based on material design colors")
 (display-color-cells (selected-frame))
 (let* ((class '((class color) (min-colors 89)))
-       (256color (eq (display-color-cells (selected-frame)) 256))
+       (256color  (eq (display-color-cells (selected-frame)) 256))
+       (truecolor (eq (display-color-cells (selected-frame)) 16777216))
 
-       (background (if window-system "#263238" "#262626")) ;; sidebar-container
-       (current-line (if window-system  "#37474f" "#3a3a3a")) ;; tree-row
-       (far-background (if window-system  "#1c1f26" "#121212")) ;; panel-control
-       (inactive-gray (if window-system "#78909c" "#8a8a8a"))
-       (header-color (if window-system "#455A64" "#5f5f5f"))
+       (background (if (or window-system truecolor) "#263238" "#262626")) ;; sidebar-container
+       (current-line (if (or window-system truecolor)  "#37474f" "#3a3a3a")) ;; tree-row
+       (far-background (if (or window-system truecolor)  "#1c1f26" "#121212")) ;; panel-control
+       (inactive-gray (if (or window-system truecolor) "#78909c" "#8a8a8a"))
+       (header-color (if (or window-system truecolor) "#455A64" "#5f5f5f"))
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
        (selection "#555555") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
