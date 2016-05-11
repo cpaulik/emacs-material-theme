@@ -123,7 +123,7 @@
    `(avy-lead-face ((,class (:foreground ,foreground
                              :background ,"#ef6c00"
                              :weight bold))))
-        
+
    ;; Flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
@@ -604,7 +604,7 @@
    ;; Company autocomplete
    ;; `(company-echo ((,class ())))
    ;; `(company-echo-common ((,class ())))
-   
+
    `(company-preview ((,class (:foreground ,comment :background ,inactive-gray))))
    `(company-preview-common ((,class (:foreground ,comment :background ,inactive-gray)))) ; same background as highlight-line
    ;; `(company-preview-search ((,class ())))
