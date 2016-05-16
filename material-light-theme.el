@@ -796,6 +796,15 @@
    `(erc-timestamp-face ((,class (:foreground ,aqua))))
    `(erc-keyword-face ((,class (:foreground ,green))))
 
+   ;; erc-colorize
+   `(erc-distinct-1-face ((,class (:foreground ,"#E91E63"))))
+   `(erc-distinct-2-face ((,class (:foreground ,"#1565C0"))))
+   `(erc-distinct-3-face ((,class (:foreground ,"#827717"))))
+   `(erc-distinct-4-face ((,class (:foreground ,"#B388FF"))))
+   `(erc-distinct-5-face ((,class (:foreground ,"#EF6C00"))))
+   `(erc-distinct-6-face ((,class (:foreground ,"#26A69A"))))
+   `(erc-distinct-7-face ((,class (:foreground ,"#B71C1C"))))
+
    ;; twittering-mode
    `(twittering-username-face ((,class (:inherit erc-pal-face))))
    `(twittering-uri-face ((,class (:foreground ,blue :inherit link))))
