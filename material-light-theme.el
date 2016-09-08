@@ -222,6 +222,7 @@
                                            :foreground, selection))))
    `(border-glyph ((,class (nil))))
    `(highlight ((,class (:inverse-video nil :background ,current-line))))
+   `(hl-line ((,class (:inverse-video nil :background ,current-line))))
    `(gui-element ((,class (:background ,current-line :foreground ,foreground))))
    `(mode-line ((,class (:foreground ,foreground :background ,far-background
                                      :box (:line-width 2 :color ,current-line)))))
