@@ -1,0 +1,12 @@
+* v1.2 unreleased
+
+- Add support for diredfl
+
+* v1.1 2016-09-09
+
+- Set hl-face explicitly to avoid faulty inheritance
+
+* v1.0 2016-08-14
+
+- Initial Release tagged for MELPA stable support.
+
