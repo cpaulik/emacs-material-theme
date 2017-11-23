@@ -1,6 +1,7 @@
 * v1.2 unreleased
 
 - Add support for diredfl
+- Make diredfl and helm-ff consistent
 
 * v1.1 2016-09-09
 
