@@ -326,6 +326,28 @@
    `(diredp-symlink ((,class (:foreground ,purple))))
    `(diredp-write-priv ((,class (:foreground ,yellow :background nil))))
 
+   ;; diredfl
+   `(diredfl-compressed-file-suffix ((,class (:foreground ,blue))))
+   `(diredfl-compressed-file-name ((,class (:foreground ,blue))))
+   `(diredfl-ignored-file-name ((,class (:foreground ,comment))))
+   `(diredfl-date-time ((,class (:foreground ,green))))
+   `(diredfl-file-name ((,class (:foreground ,foreground))))
+   `(diredfl-read-priv ((,class (:foreground ,green :background nil))))
+   `(diredfl-write-priv ((,class (:foreground ,yellow :background nil))))
+   `(diredfl-exec-priv ((,class (:foreground ,red :background nil))))
+   `(diredfl-rare-priv ((,class (:foreground ,orange :background nil))))
+   `(diredfl-no-priv ((,class (:background nil))))
+   `(diredfl-deletion ((,class (:inherit error :inverse-video t))))
+   `(diredfl-deletion-file-name ((,class (:inherit error))))
+   `(diredfl-dir-heading ((,class (:foreground ,green :weight bold))))
+   `(diredfl-symlink ((,class (:foreground ,purple))))
+   `(diredfl-dir-priv ((,class (:foreground ,blue :background nil))))
+   `(diredfl-dir-name ((,class (:foreground ,blue :background nil))))
+   `(diredfl-number ((,class (:foreground ,yellow :background nil))))
+   `(diredfl-flag-mark ((,class (:foreground ,orange :background nil))))
+   `(diredfl-flag-mark-line ((,class (:foreground ,nil :background ,selection))))
+   `(diredfl-file-suffix ((,class (:foreground ,aqua :background nil))))
+
    ;; Magit
    `(magit-branch ((,class (:foreground ,green))))
    `(magit-diff-added ((,class (:inherit diff-added))))
