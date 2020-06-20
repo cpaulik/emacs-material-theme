@@ -177,8 +177,7 @@
    ;; Search
    `(match ((,class (:foreground ,background :background ,green :inverse-video nil))))
    `(isearch ((,class (:foreground ,foreground :background ,green))))
-   `(isearch-lazy-highlight-face ((,class (:foreground ,background :background ,green :inverse-video nil))))
-   `(lazy-highlight-face ((,class (:foreground ,background :background ,green :inverse-video nil))))
+   `(lazy-highlight ((,class (:foreground ,background :background ,green :inverse-video nil))))
    `(isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
 
    ;; Evil
@@ -193,7 +192,7 @@
 
    ;; Anzu
    `(anzu-mode-line ((,class (:foreground ,orange))))
-   `(anzu-replace-highlight ((,class (:inherit isearch-lazy-highlight-face))))
+   `(anzu-replace-highlight ((,class (:inherit lazy-highlight))))
    `(anzu-replace-to ((,class (:inherit isearch))))
 
    ;; IDO
