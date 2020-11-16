@@ -52,6 +52,15 @@
        (background (if (or window-system truecolor) "#263238" "#262626")) ;; sidebar-container
        (current-line (if (or window-system truecolor)  "#37474f" "#3a3a3a")) ;; tree-row
        (far-background (if (or window-system truecolor)  "#1c1f26" "#121212")) ;; panel-control
+       (diff-nonactive-bg "#2F3D41")
+       (diff-current-A-bg "#40393D")
+       (diff-fine-A-bg "#784948")
+       (diff-current-B-bg "#203B4A")
+       (diff-fine-B-bg "#155378")
+       (diff-current-C-bg "#33453A")
+       (diff-fine-C-bg "#4F6C3F")
+       (diff-current-ancestor-bg "#203B4A")
+       (diff-fine-ancestor-bg "#155378")
        (inactive-gray (if (or window-system truecolor) "#78909c" "#8a8a8a"))
        (header-color (if (or window-system truecolor) "#455A64" "#5f5f5f"))
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
@@ -75,8 +84,8 @@
    `(underline ((,class (:underline t))))
    `(italic ((,class (:slant italic))))
    `(font-lock-builtin-face ((,class (:foreground "#ff8A65"))))
-   `(font-lock-comment-delimiter-face ((,class (:foreground ,comment))))
-   `(font-lock-comment-face ((,class (:foreground ,comment))))
+   `(font-lock-comment-delimiter-face ((,class (:foreground ,comment :slant italic))))
+   `(font-lock-comment-face ((,class (:foreground ,comment :slant italic))))
    `(font-lock-constant-face ((,class (:foreground ,green))))
    `(font-lock-doc-face ((,class (:foreground "moccasin"))))
    `(font-lock-doc-string-face ((,class (:foreground ,yellow))))
@@ -129,7 +138,7 @@
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
    ;; highlight indentation
-   `(highlight-indentation-face ((,class (:background, current-line))))
+   `(highlight-indentation-face ((,class (:background "#2a373e"))))
    `(highlight-indentation-current-column-face ((,class (:background, far-background))))
 
    ;; Flymake
@@ -220,11 +229,11 @@
    `(highlight ((,class (:inverse-video nil :background ,current-line))))
    `(hl-line ((,class (:inverse-video nil :background ,current-line))))
    `(gui-element ((,class (:background ,current-line :foreground ,foreground))))
-   `(mode-line ((,class (:foreground ,foreground :background ,far-background))))
-   `(mode-line-buffer-id ((,class (:foreground ,foreground :background nil :weight bold))))
+   `(mode-line ((,class (:foreground ,orange :background "#110011"))))
+   `(mode-line-buffer-id ((,class (:foreground nil :background nil :weight bold))))
    `(mode-line-inactive ((,class (:inherit mode-line
                                            :foreground ,subtle
-                                           :background ,far-background :weight normal
+                                           :background "#110011" :weight normal
                                            :box nil))))
    `(mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
    `(mode-line-highlight ((,class (:foreground ,purple :box nil))))
@@ -285,10 +294,23 @@
    `(diff-refine-added ((,class (:inherit diff-added :inverse-video t))))
    `(diff-refine-removed ((,class (:inherit diff-removed :inverse-video t))))
 
-   `(ediff-even-diff-A ((,class (:foreground nil :background nil :inverse-video t))))
-   `(ediff-even-diff-B ((,class (:foreground nil :background nil :inverse-video t))))
-   `(ediff-odd-diff-A  ((,class (:foreground ,comment :background nil :inverse-video t))))
-   `(ediff-odd-diff-B  ((,class (:foreground ,comment :background nil :inverse-video t))))
+   ;; ediff
+   `(ediff-even-diff-A ((,class (:background ,diff-nonactive-bg))))
+   `(ediff-even-diff-B ((,class (:background ,diff-nonactive-bg))))
+   `(ediff-even-diff-C ((,class (:background ,diff-nonactive-bg))))
+   `(ediff-even-diff-Ancestor ((,class (:background ,diff-nonactive-bg))))
+   `(ediff-odd-diff-A ((,class (:background ,diff-nonactive-bg))))
+   `(ediff-odd-diff-B ((,class (:background ,diff-nonactive-bg))))
+   `(ediff-odd-diff-C ((,class (:background ,diff-nonactive-bg))))
+   `(ediff-odd-diff-Ancestor ((,class (:background ,diff-nonactive-bg))))
+   `(ediff-current-diff-A ((,class (:background ,diff-current-A-bg))))
+   `(ediff-current-diff-B ((,class (:background ,diff-current-B-bg))))
+   `(ediff-current-diff-C ((,class (:background ,diff-current-C-bg))))
+   `(ediff-current-diff-Ancestor ((,class (:background ,diff-current-ancestor-bg))))
+   `(ediff-fine-diff-A ((,class (:background ,diff-fine-A-bg))))
+   `(ediff-fine-diff-B ((,class (:background ,diff-fine-B-bg))))
+   `(ediff-fine-diff-C ((,class (:background ,diff-fine-C-bg))))
+   `(ediff-fine-diff-Ancestor ((,class (:background ,diff-fine-ancestor-bg))))
 
    `(eldoc-highlight-function-argument ((,class (:foreground ,green :weight bold))))
 
