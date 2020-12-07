@@ -465,8 +465,8 @@
    `(org-agenda-date ((,class (:foreground ,blue :underline nil))))
    `(org-agenda-done ((,class (:foreground ,green))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground ,comment))))
-   `(org-block ((,class (:foreground ,foreground :background ,"#EFEBE9"))))
-   `(org-block-background ((,t (:background ,"#EFEBE9"))))
+   `(org-block ((,class (:foreground ,foreground :background ,"#EFEBE9" :extend t))))
+   `(org-block-background ((,t (:background ,"#EFEBE9" :extend t))))
    `(org-code ((,class (:foreground ,foreground :background ,"#EFEBE9"))))
    `(org-column ((,class (:background ,current-line))))
    `(org-column-title ((,class (:inherit org-column :weight bold :underline t))))
@@ -489,10 +489,9 @@
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-warning ((,class (:weight bold :foreground ,red))))
    `(org-block-begin-line ((,class (:foreground ,"#4e342e" :background "#efebe9"
-                                                :box (:style released-button)
-                                                ))))
+                                                :box (:style released-button) :extend t))))
    `(org-block-end-line ((,class (:foreground ,"#4e342e" :background "#efebe9"
-                                              :box (:style released-button)))))
+                                              :box (:style released-button) :extend t))))
    `(org-kbd ((,class (:background ,inactive-gray :foreground ,foreground
                                    :box (:line-width 1 :color nil :style pressed-button)))))
 
