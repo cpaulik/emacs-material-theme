@@ -217,6 +217,7 @@
    `(linum ((,class (:background ,current-line :foreground ,foreground))))
    `(linum-highlight-face ((,class (:background ,current-line :foreground ,foreground))))
    `(border ((,class (:background ,current-line))))
+   `(internal-border ((,class (:background ,current-line))))
    `(vertical-border ((,class (:background ,selection
                                            :foreground, selection))))
    `(border-glyph ((,class (nil))))
